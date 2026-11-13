@@ -31,39 +31,6 @@ All of this happens right on your screen via an interactive **Floating Window Ov
 
 ---
 
-## 🌟 Visual Showcase
-
-<div align="center">
-  <table>
-    <tr>
-      <td width="33%" align="center">
-        <b>🪟 Floating Overlay on Spotify</b><br/><br/>
-        <img src="assets/screenshots/01_floating_lyrics_spotify_persian.png" alt="Floating Overlay with Persian Translation" width="100%">
-      </td>
-      <td width="33%" align="center">
-        <b>⚡ Live Music Tracking</b><br/><br/>
-        <img src="assets/screenshots/02_overlay_music_tracking.png" alt="Music Player Overlay" width="100%">
-      </td>
-      <td width="33%" align="center">
-        <b>🎛️ Detailed Window Controls</b><br/><br/>
-        <img src="assets/screenshots/03_floating_controls_sync.png" alt="Floating Controls & Sync" width="100%">
-      </td>
-    </tr>
-    <tr>
-      <td width="33%" align="center">
-        <b>📱 Home & Offline Library</b><br/><br/>
-        <img src="assets/screenshots/04_home_screen_library.png" alt="Home Screen" width="100%">
-      </td>
-      <td width="33%" align="center" colspan="2">
-        <b>⚙️ Multi-Model AI Hub & Custom Endpoints</b><br/><br/>
-        <img src="assets/screenshots/05_custom_ai_settings.png" alt="Settings & Model Discovery" width="55%">
-      </td>
-    </tr>
-  </table>
-</div>
-
----
-
 ## ✨ Key Features
 
 ### 🪟 Real-Time Floating Karaoke Overlay (System Alert Window)

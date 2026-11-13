@@ -1,218 +1,79 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="LyricEcho AI Banner" width="100%">
+  <img src="assets/banner.svg" alt="LyricEcho AI" width="100%">
 </p>
 
+<h1 align="center">Your music, in your words.</h1>
+<p align="center">Synchronized lyrics and line-by-line translations for Android and Windows.</p>
 <p align="center">
-  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/latest"><img src="https://img.shields.io/github/v/release/shinigami6669/LyricEcho-AI?style=for-the-badge&color=EC4899&label=Universal%20APK" alt="Download APK"></a>
-  <a href="https://github.com/shinigami6669/LyricEcho-AI/stargazers"><img src="https://img.shields.io/github/stars/shinigami6669/LyricEcho-AI?style=for-the-badge&color=8B5CF6" alt="Stars"></a>
-  <a href="https://github.com/shinigami6669/LyricEcho-AI/network/members"><img src="https://img.shields.io/github/forks/shinigami6669/LyricEcho-AI?style=for-the-badge&color=06B6D4" alt="Forks"></a>
-  <a href="https://github.com/shinigami6669/LyricEcho-AI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge" alt="License"></a>
-  <a href="https://developer.android.com"><img src="https://img.shields.io/badge/Platform-Android%207.0%2B%20(API%2024%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"></a>
-  <a href="https://kotlinlang.org"><img src="https://img.shields.io/badge/Kotlin-2.0%2B-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"></a>
-  <a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Compose"></a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/latest">
-    <img src="https://img.shields.io/badge/Direct%20Download-Universal%20APK%20(v1.0.1)-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="42">
-  </a>
+  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho-AI-v1.0.1-universal.apk"><img src="https://img.shields.io/badge/Android-Download%20APK-45D6A3?style=for-the-badge&amp;logo=android&amp;logoColor=white" alt="Download Android APK"></a>
+  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho.Windows.exe"><img src="https://img.shields.io/badge/Windows-Download%20EXE-8B5CF6?style=for-the-badge&amp;logo=windows&amp;logoColor=white" alt="Download Windows EXE"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-242B3B?style=for-the-badge" alt="MIT License"></a>
 </p>
 
 ---
 
-# 🎵 LyricEcho AI
+## One song. Two languages.
 
-> **Real-Time Bilingual Lyrics & Synchronized Floating Overlay Player for Android**  
-> Inspired by Musixmatch, supercharged with Google Gemini & Custom LLMs, LRCLIB synchronized lyrics, and zero-latency Room database persistence.
+Follow the original lyrics while reading a translation in your chosen language. LyricEcho detects supported media players, looks up lyrics through LRCLIB, and keeps the current line in view. Its floating window stays close to your music, with playback and timing controls at hand.
 
-**LyricEcho AI** is a native Android application designed for music lovers and language learners. It automatically detects songs playing on your device (via Spotify, YouTube Music, Apple Music, etc.), retrieves time-synced lyrics, and translates them line-by-line using advanced AI into your preferred language (with first-class support for Persian/Farsi, Spanish, French, German, Japanese, Arabic, and more).
+<table>
+<tr><td width="50%" valign="top">
 
-All of this happens right on your screen via an interactive **Floating Window Overlay** that sits above your music app, complete with playback controls and millisecond sync adjustments!
+### Android
 
----
+A mobile companion for supported music players, with a floating overlay, local library, and translation settings.
 
-## ✨ Key Features
+**Requires:** Android 7.0 or later.
 
-### 🪟 Real-Time Floating Karaoke Overlay (System Alert Window)
-- **Always on Top**: Floats seamlessly over Spotify, YouTube Music, SoundCloud, or any media player.
-- **Interactive Controls**: Play, pause, skip, track seeker, and minimize/maximize buttons without leaving your music app.
-- **Micro-Sync Adjustment**: Fine-tune lyrics timestamp alignment on-the-fly (`-0.5s` / `+0.5s`) for perfect audio-lyric harmony.
-- **Dual-Line Presentation**: Displays the original lyrics on top and the culturally nuanced AI translation directly below.
+[Download the Android APK](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho-AI-v1.0.1-universal.apk)
 
-### 🧠 Dual AI Translation Engine (Gemini & Custom LLMs)
-- **Google Gemini API**: Native integration for fast, context-aware, poetic translations.
-- **OpenAI-Compatible Custom Endpoints**: Connect any server or proxy (DeepSeek V3/R1, Ollama, OpenRouter, Groq, vLLM, etc.).
-- **Automatic Model Discovery**: Probes `/v1/models` in real time with latency benchmarking (ms ping) and one-tap model selection.
-- **Reasoning Model Support**: Automatically handles and cleans `<think>` reasoning tags from DeepSeek-R1 and similar architectures.
+</td><td width="50%" valign="top">
 
-### 🎧 Automatic Song Detection & Media Session Tracking
-- **Spotify Broadcast Receiver**: Intercepts `com.spotify.music.playbackstatechanged` for zero-lag track updates.
-- **Media Notification Listener**: Monitors Android MediaSession to capture active song metadata (Title, Artist, Duration, Progress) across all players.
+### Windows
 
-### ⚡ Offline-First Architecture (Room Database)
-- **Zero Latency (0ms)**: Previously translated songs are saved in local SQLite storage.
-- **Save Quota**: Never spend AI tokens twice on the same track.
-- **Clear Status Badges**: Visual indicators for `[Offline Cache]` (Emerald) and `[AI Live]` (Sky Cyan).
+A desktop companion with a movable lyrics window, local library, media-session controls, and notification-area support.
 
-### 🎨 Modern Jetpack Compose UI
-- **Design System**: Premium Dark Obsidian theme (`#080B11`), Electric Violet (`#8B5CF6`), and Cyan Horizon (`#06B6D4`).
-- **Bilingual Typography**: Tailored font rendering supporting bidirectional RTL (Persian / Arabic) and LTR scripts.
-- **Diagnostics Screen**: Live terminal displaying HTTP calls, network latencies, and service logs in real time.
+**Requires:** 64-bit Windows 10 version 19041 or later, or Windows 11. The single-file release includes the .NET runtime.
 
----
+[Download the Windows EXE](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho.Windows.exe)
 
-## 🏗️ Technical Architecture
+</td></tr>
+</table>
 
-LyricEcho AI is built following modern Android Architecture Components (Clean Architecture + MVVM + Offline-First Repository):
+## Made for listening
 
-```mermaid
-flowchart TD
-    subgraph AndroidSystem["🤖 Android OS Layer"]
-        SBC["Spotify Broadcast Receiver"]
-        NLS["Music Notification Listener (MediaSession)"]
-        WIN["WindowManager (Floating Overlay)"]
-    end
+- **Lyrics in sync** — follow timed lyrics and adjust the timing when needed.
+- **Translations** — choose a language and connect Gemini or a compatible AI provider using your own credentials.
+- **Floating lyrics** — keep the current line visible while using another app.
+- **Your library** — return to locally saved songs and translations.
+- **Flexible playback** — detect supported players and use the available media controls.
 
-    subgraph Presentation["🎨 Presentation Layer (Jetpack Compose)"]
-        UI_Home["HomeScreen"]
-        UI_Player["LyricsPlayerScreen"]
-        UI_Library["LibraryScreen"]
-        UI_Settings["SettingsScreen"]
-        UI_Diag["DiagnosticsScreen"]
-        VM["LyricEchoViewModel (StateFlow)"]
-    end
+Features and player support can differ between Android and Windows. Translation requires an available provider and may incur usage charges. Lyrics and timing depend on the available source.
 
-    subgraph Service["⚙️ Background Services"]
-        FLS["FloatingLyricsService (Foreground)"]
-        FOC["FloatingOverlayController"]
-    end
+## Get started
 
-    subgraph DomainData["📦 Data & Repository Layer"]
-        REPO["LyricRepository"]
-        ROOM[("Room Database (SQLite)")]
-        DATASTORE["Settings DataStore Preferences"]
-    end
+1. Download the file for your platform from the links above.
+2. Install the Android APK or run the Windows executable.
+3. In settings, select a translation provider, enter your own API key, and choose a target language.
+4. Play a track in a supported music player, or search for a song manually.
 
-    subgraph Remote["🌐 Remote Services"]
-        LRCLIB["LRCLIB Service (LRC Synced Lyrics)"]
-        GEMINI["Google Gemini API"]
-        CUSTOM_LLM["Custom OpenAI-Compatible API (DeepSeek / Ollama)"]
-    end
+On Android, enable the requested media notification and overlay permissions for automatic detection and the floating window. On Windows, closing the main window keeps LyricEcho running in the notification area. Use its tray icon to reopen or exit the app. The Windows executable is currently unsigned, so Windows may display a publisher warning.
 
-    SBC -->|Track Changed| VM
-    NLS -->|Playback State & Progress| VM
-    VM <--> FLS
-    FLS <--> FOC
-    FOC --> WIN
+## Build from source
 
-    UI_Home & UI_Player & UI_Library & UI_Settings & UI_Diag <--> VM
-    VM <--> REPO
+| Platform | Project | Requirements | Command |
+| --- | --- | --- | --- |
+| Android | Repository root | JDK 17 and Android SDK | `./gradlew assembleDebug` |
+| Windows | [`windows/`](windows/) | .NET 8 SDK and Windows | `dotnet run --project windows/LyricEcho.Windows.csproj` |
 
-    REPO <--> ROOM
-    REPO <--> DATASTORE
-    REPO --> LRCLIB
-    REPO --> GEMINI
-    REPO --> CUSTOM_LLM
-```
+For Android, optionally configure a Gemini key locally using `.env.example` as a template, or enter it in the app. The Windows project includes a [build and configuration guide](windows/README.md). Never commit credentials or local application data.
 
----
+## فارسی
 
-## 🛠️ Tech Stack & Libraries
+**LyricEcho** متن آهنگ و ترجمه خط‌به‌خط آن را در اندروید و ویندوز نمایش می‌دهد. پنجره شناور، کتابخانه محلی و تنظیم زمان به شما کمک می‌کنند هنگام گوش دادن، متن را دنبال کنید. زبان و سرویس ترجمه را در تنظیمات انتخاب کنید و کلید API خودتان را وارد کنید.
 
-| Category | Technologies |
-| :--- | :--- |
-| **Language** | [Kotlin 2.0+](https://kotlinlang.org/) |
-| **UI Framework** | [Jetpack Compose](https://developer.android.com/jetpack/compose) with [Material 3](https://m3.material.io/) |
-| **Architecture** | MVVM, Clean Architecture, Unidirectional Data Flow (UDF) |
-| **Async & Reactive** | Kotlin Coroutines & StateFlow / SharedFlow |
-| **Local Database** | [AndroidX Room](https://developer.android.com/training/data-storage/room) with KSP compiler |
-| **Settings Storage** | Jetpack DataStore Preferences |
-| **Networking** | OkHttp 4, Retrofit 2, Moshi (JSON parsing) |
-| **AI Integration** | Google Gemini API (v1beta) + Custom OpenAI-compatible REST API |
-| **Media & Lyrics** | AndroidX MediaSession, Android MediaNotificationListener, LRCLIB API |
-| **Image Loading** | Coil Compose |
+[دانلود اندروید](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho-AI-v1.0.1-universal.apk) · [دانلود ویندوز](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho.Windows.exe)
 
----
+## License
 
-## 🚀 Getting Started
-
-### Prerequisites
-- **Android Studio**: Ladybug (2024.2.1) or newer recommended
-- **JDK**: Version 17 or higher
-- **Android SDK**: `minSdk = 24` (Android 7.0 Nougat), `targetSdk = 36`
-
-### 1. Clone the Repository
-```bash
-git clone https://github.com/shinigami6669/LyricEcho-AI.git
-cd LyricEcho-AI
-```
-
-### 2. Configure Environment Variables
-Copy `.env.example` to `.env` in the root folder:
-```bash
-cp .env.example .env
-```
-Open `.env` and add your Gemini API Key:
-```properties
-GEMINI_API_KEY=your_gemini_api_key_here
-```
-*(Alternatively, you can leave it blank and configure your custom API key or private endpoint inside the app's Settings screen at any time).*
-
-### 3. Build & Run
-Open the project in Android Studio and hit **Run** (`Shift + F10`), or build via Gradle:
-```bash
-./gradlew assembleDebug
-```
-
----
-
-## 🔐 Permissions Overview
-
-LyricEcho AI requires the following Android permissions to deliver its seamless experience:
-
-| Permission | Reason |
-| :--- | :--- |
-| `SYSTEM_ALERT_WINDOW` | Required to display the floating lyrics overlay on top of other apps. |
-| `BIND_NOTIFICATION_LISTENER_SERVICE` | Required to read active music playback information from Spotify and other media players. |
-| `INTERNET` | Required to query LRCLIB for lyrics and AI endpoints for translations. |
-| `FOREGROUND_SERVICE` | Keeps the floating lyrics window alive and synchronized in the background. |
-| `POST_NOTIFICATIONS` | Displays playback controls and service status in the notification shade (Android 13+). |
-
----
-
-## 🇮🇷 راهنمای فارسی (Persian Overview)
-
-**لیک‌اکو (LyricEcho AI)** یک اپلیکیشن مدرن و پیشرفته اندروید است که تجربه گوش دادن به موسیقی را متحول می‌کند:
-
-- **پاپ‌آپ شناور هوشمند (Floating Overlay)**: نمایش متن آهنگ و ترجمه فارسی آن به صورت پنجره شناور روی اسپاتیفای و سایر موزیک‌پلیرها، همراه با کلیدهای کنترل پخش و تنظیم دقیق زمان‌بندی (سینک).
-- **ترجمه زنده با هوش مصنوعی**: پشتیبانی از دو موتور قدرتمند:
-  1. **Google Gemini API**: ترجمه‌های دقیق، روان و دارای مفهوم شعری.
-  2. **سرورهای سفارشی (OpenAI Compatible)**: امکان اتصال به مدل‌های DeepSeek، سرورهای شخصی، Ollama و پروکسی‌ها با شناسایی خودکار مدل‌ها (`/v1/models`).
-- **تشخیص خودکار آهنگ**: بدون نیاز به تایپ، به محض پخش موزیک در اسپاتیفای یا پلیرهای دیگر، نام آهنگ و موقعیت زمانی آن دریافت شده و لیریک همگام‌سازی می‌شود.
-- **کش آفلاین بدون تاخیر (Room DB)**: آهنگ‌هایی که قبلاً ترجمه شده‌اند بلافاصله از حافظه دستگاه بارگذاری می‌شوند تا حجم اینترنت و توکن‌های هوش مصنوعی هدر نرود.
-- **پشتیبانی کامل از زبان فارسی**: فونت‌های خوانا و راست‌به‌چپ (RTL) به همراه زبان‌های اسپانیایی، فرانسوی، آلمانی، ژاپنی و عربی.
-
----
-
-## 🤝 Contributing
-
-Contributions, issues, and feature suggestions are warmly welcome!  
-Feel free to open an issue or submit a pull request:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
----
-
-## 📜 License
-
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
-
----
-
-<p align="center">
-  Crafted with ❤️ by <a href="https://github.com/shinigami6669">shinigami6669</a>
-</p>
+LyricEcho AI is distributed under the [MIT License](LICENSE).

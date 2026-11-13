@@ -1,0 +1,39 @@
+name: Bug Report
+description: File a bug report to help us improve LyricEcho AI
+title: "[BUG]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug!
+  - type: input
+    id: song
+    attributes:
+      label: Song / Artist
+      description: What song or artist were you listening to when the bug occurred?
+      placeholder: "e.g., Bohemian Rhapsody - Queen"
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps To Reproduce
+      description: Steps to reproduce the behavior.
+      placeholder: |
+        1. Open app
+        2. Play music on Spotify
+        3. Enable Floating Overlay
+        4. See error
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: Device & Android Version
+      placeholder: "e.g., Xiaomi 13 Pro, Android 14"

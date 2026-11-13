@@ -1,0 +1,6 @@
+{
+  "name": "LyricEcho AI",
+  "description": "Bilingual lyrics and real-time AI translation player inspired by Musixmatch, featuring offline Room persistence and synchronized karaoke cards.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

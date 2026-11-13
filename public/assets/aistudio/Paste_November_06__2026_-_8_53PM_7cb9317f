@@ -1,0 +1,1150 @@
+[06/11/2026 20:47] Neko: === گزارش تفصیلی لاگ‌های سیستم LyricEcho AI ===
+تاریخ: 2026-11-06 20:47:42
+
+[20:42:04.284] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.377] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 346ms / 170000ms (Playing=true)
+[20:42:04.378] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.378] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 346ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.378] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=346ms | AutoDetectEnabled=true
+[20:42:04.379] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 346ms
+[20:42:04.391] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.392] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=346ms | AutoDetectEnabled=true
+[20:42:04.392] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 346ms
+[20:42:04.395] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.396] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: Playing: true | Position: 346ms | Duration: 170000ms
+[20:42:04.398] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.400] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 371ms / 170000ms (Playing=true)
+[20:42:04.400] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.401] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 371ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.401] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=371ms | AutoDetectEnabled=true
+[20:42:04.402] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 371ms
+[20:42:04.434] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.435] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=371ms | AutoDetectEnabled=true
+[20:42:04.436] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 371ms
+[20:42:04.440] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.441] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+[06/11/2026 20:47] Neko: -> جزئیات: Playing: true | Position: 371ms | Duration: 170000ms
+[20:42:04.445] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.447] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 418ms / 170000ms (Playing=true)
+[20:42:04.447] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.448] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 418ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.448] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=418ms | AutoDetectEnabled=true
+[20:42:04.449] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 418ms
+[20:42:04.453] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.454] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=418ms | AutoDetectEnabled=true
+[20:42:04.455] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 418ms
+[20:42:04.458] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.459] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: Playing: true | Position: 418ms | Duration: 170000ms
+[20:42:04.461] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.465] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 435ms / 170000ms (Playing=true)
+[20:42:04.470] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.470] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 435ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.473] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=435ms | AutoDetectEnabled=true
+[20:42:04.473] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 435ms
+[20:42:04.476] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.477] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=435ms | AutoDetectEnabled=true
+[20:42:04.478] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 435ms
+[20:42:04.480] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.481] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+[06/11/2026 20:47] Neko: -> جزئیات: Playing: true | Position: 435ms | Duration: 170000ms
+[20:42:04.487] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.599] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 570ms / 170000ms (Playing=true)
+[20:42:04.600] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.601] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 570ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.603] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=570ms | AutoDetectEnabled=true
+[20:42:04.604] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 570ms
+[20:42:04.610] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.612] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=570ms | AutoDetectEnabled=true
+[20:42:04.613] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 570ms
+[20:42:04.618] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.619] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: Playing: true | Position: 570ms | Duration: 170000ms
+[20:42:04.626] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.628] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 599ms / 170000ms (Playing=true)
+[20:42:04.628] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.629] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 599ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.629] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=599ms | AutoDetectEnabled=true
+[20:42:04.629] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 599ms
+[20:42:04.633] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.634] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=599ms | AutoDetectEnabled=true
+[20:42:04.635] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 599ms
+[20:42:04.639] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.640] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+[06/11/2026 20:47] Neko: -> جزئیات: Playing: true | Position: 599ms | Duration: 170000ms
+[20:42:04.643] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.670] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 640ms / 170000ms (Playing=true)
+[20:42:04.671] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.672] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 640ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.674] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=640ms | AutoDetectEnabled=true
+[20:42:04.675] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 640ms
+[20:42:04.677] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.678] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=640ms | AutoDetectEnabled=true
+[20:42:04.678] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 640ms
+[20:42:04.681] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.692] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: Playing: true | Position: 640ms | Duration: 170000ms
+[20:42:04.696] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.697] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 668ms / 170000ms (Playing=true)
+[20:42:04.697] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:04.698] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 668ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:04.699] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=668ms | AutoDetectEnabled=true
+[20:42:04.700] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 668ms
+[20:42:04.705] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.706] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=668ms | AutoDetectEnabled=true
+[20:42:04.706] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 668ms
+[20:42:04.712] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:04.713] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+[06/11/2026 20:47] Neko: -> جزئیات: Playing: true | Position: 668ms | Duration: 170000ms
+[20:42:04.726] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.114] [SUCCESS] [Spotify Bcast]: متن رسمی و تایم‌استمپ‌های دقیق استودیویی از LRCLIB دریافت شد (15 خط)
+   -> جزئیات: Title: Alicia | Duration: 170000ms | Synced: true
+[20:42:05.320] [SUCCESS] [Spotify Bcast]: متن رسمی و تایم‌استمپ‌های دقیق استودیویی از LRCLIB دریافت شد (15 خط)
+   -> جزئیات: Title: Alicia | Duration: 170000ms | Synced: true
+[20:42:05.848] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 221ms / 262947ms (Playing=true)
+[20:42:05.849] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Alicia" - "Lorien Testard, Alice Duport-Percier"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:05.849] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Alicia" اثر Lorien Testard, Alice Duport-Percier (موقعیت: 221ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:05.850] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=221ms | AutoDetectEnabled=true
+[20:42:05.850] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 221ms
+[20:42:05.856] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.857] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: IsPlaying=true | Position=221ms | AutoDetectEnabled=true
+[20:42:05.857] [INFO] [Floating Popup]: آهنگ "Alicia" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 221ms
+[20:42:05.861] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.862] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Alicia" - Lorien Testard, Alice Duport-Percier
+   -> جزئیات: Playing: true | Position: 221ms | Duration: 262947ms
+[20:42:05.879] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.882] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 255ms / 262947ms (Playing=true)
+[20:42:05.882] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:05.883] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 255ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:05.883] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=255ms | AutoDetectEnabled=true
+[20:42:05.884] [SUCCESS] [Floating Popup]: رویداد پخش آهنگ دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Position: 255ms | Auto-opening pop-up immediately...
+[20:42:05.889] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.890] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=255ms | AutoDetectEnabled=true
+[06/11/2026 20:47] Neko: [20:42:05.891] [SUCCESS] [Floating Popup]: رویداد پخش آهنگ دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Position: 255ms | Auto-opening pop-up immediately...
+[20:42:05.897] [SUCCESS] [Room SQLite]: بازیابی با تاخیر 0ms از حافظه محلی Room (Cache Hit): "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Language: Persian | Lines: 42 | Duration: 263000ms
+[20:42:05.903] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.904] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 255ms | Duration: 262947ms
+[20:42:05.911] [SUCCESS] [Room SQLite]: بازیابی با تاخیر 0ms از حافظه محلی Room (Cache Hit): "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Language: Persian | Lines: 42 | Duration: 263000ms
+[20:42:05.912] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.913] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 318ms / 262947ms (Playing=true)
+[20:42:05.914] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:05.914] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 318ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:05.914] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=318ms | AutoDetectEnabled=true
+[20:42:05.915] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 318ms
+[20:42:05.919] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.922] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=318ms | AutoDetectEnabled=true
+[20:42:05.922] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 318ms
+[20:42:05.934] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.935] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 318ms | Duration: 262947ms
+[20:42:05.944] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.945] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 351ms / 262947ms (Playing=true)
+[20:42:05.946] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:05.946] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 351ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:05.947] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=351ms | AutoDetectEnabled=true
+[20:42:05.948] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+[06/11/2026 20:47] Neko: -> جزئیات: Position: 351ms
+[20:42:05.950] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.951] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=351ms | AutoDetectEnabled=true
+[20:42:05.952] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 351ms
+[20:42:05.968] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:05.969] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 351ms | Duration: 262947ms
+[20:42:05.972] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.067] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 578ms / 262947ms (Playing=true)
+[20:42:06.067] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:06.067] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 578ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:06.068] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=578ms | AutoDetectEnabled=true
+[20:42:06.072] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 578ms
+[20:42:06.099] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.100] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=578ms | AutoDetectEnabled=true
+[20:42:06.100] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 578ms
+[20:42:06.171] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.172] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 578ms | Duration: 262947ms
+[20:42:06.182] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.223] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 734ms / 262947ms (Playing=true)
+[20:42:06.224] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:06.226] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 734ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:06.227] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=734ms | AutoDetectEnabled=true
+[20:42:06.228] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+[06/11/2026 20:47] Neko: -> جزئیات: Position: 734ms
+[20:42:06.236] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.242] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=734ms | AutoDetectEnabled=true
+[20:42:06.244] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 734ms
+[20:42:06.251] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.252] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 734ms | Duration: 262947ms
+[20:42:06.255] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.318] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 830ms / 262947ms (Playing=true)
+[20:42:06.319] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:06.319] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 830ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:06.320] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=830ms | AutoDetectEnabled=true
+[20:42:06.320] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 830ms
+[20:42:06.324] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.325] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=830ms | AutoDetectEnabled=true
+[20:42:06.325] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 830ms
+[20:42:06.344] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.345] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 830ms | Duration: 262947ms
+[20:42:06.351] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.362] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 864ms / 262947ms (Playing=true)
+[20:42:06.362] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:06.363] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 864ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:06.363] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=864ms | AutoDetectEnabled=true
+[20:42:06.364] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+[06/11/2026 20:47] Neko: -> جزئیات: Position: 864ms
+[20:42:06.372] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.373] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=864ms | AutoDetectEnabled=true
+[20:42:06.373] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 864ms
+[20:42:06.393] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.394] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 864ms | Duration: 262947ms
+[20:42:06.399] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.401] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 912ms / 262947ms (Playing=true)
+[20:42:06.401] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:06.401] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 912ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:06.402] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=912ms | AutoDetectEnabled=true
+[20:42:06.402] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 912ms
+[20:42:06.406] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.406] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=912ms | AutoDetectEnabled=true
+[20:42:06.407] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 912ms
+[20:42:06.410] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.410] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 912ms | Duration: 262947ms
+[20:42:06.413] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.415] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 886ms / 262947ms (Playing=true)
+[20:42:06.415] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:42:06.416] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 886ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:42:06.417] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=886ms | AutoDetectEnabled=true
+[20:42:06.417] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+[06/11/2026 20:47] Neko: -> جزئیات: Position: 886ms
+[20:42:06.440] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.442] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=886ms | AutoDetectEnabled=true
+[20:42:06.443] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 886ms
+[20:42:06.450] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.450] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 886ms | Duration: 262947ms
+[20:42:06.459] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:42:06.510] [SUCCESS] [Floating Popup]: متن لیریک با موفقیت روی پاپ‌آپ شناور تزریق گردید
+   -> جزئیات: Song: "Carnival of Rust" | Lines: 42 | FromCache: true
+[20:42:06.518] [DEBUG] [Notif Listener]: اعلان هدزآپ پاپ‌آپ اسپاتیفای ارسال شد: "Carnival of Rust"
+   -> جزئیات: Channel: lyricecho_spotify_channel | NotificationID: 2024
+[20:42:06.607] [SUCCESS] [Floating Popup]: متن لیریک با موفقیت روی پاپ‌آپ شناور تزریق گردید
+   -> جزئیات: Song: "Carnival of Rust" | Lines: 42 | FromCache: true
+[20:42:06.614] [DEBUG] [Notif Listener]: اعلان هدزآپ پاپ‌آپ اسپاتیفای ارسال شد: "Carnival of Rust"
+   -> جزئیات: Channel: lyricecho_spotify_channel | NotificationID: 2024
+[20:42:39.582] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.miui.misound: "null" - "Unknown Artist"
+   -> جزئیات: Package: com.miui.misound | Category: null | MediaSession: false | NotificationID: 887
+[20:43:39.620] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.miui.misound: "null" - "Unknown Artist"
+   -> جزئیات: Package: com.miui.misound | Category: null | MediaSession: false | NotificationID: 887
+[20:44:29.254] [SUCCESS] [Floating Popup]: متن لیریک با موفقیت روی پاپ‌آپ شناور تزریق گردید
+   -> جزئیات: Song: "Alicia" | Lines: 15 | FromCache: false
+[20:44:29.258] [DEBUG] [Notif Listener]: اعلان هدزآپ پاپ‌آپ اسپاتیفای ارسال شد: "Alicia"
+   -> جزئیات: Channel: lyricecho_spotify_channel | NotificationID: 2024
+[20:44:29.345] [SUCCESS] [Floating Popup]: متن لیریک با موفقیت روی پاپ‌آپ شناور تزریق گردید
+   -> جزئیات: Song: "Alicia" | Lines: 15 | FromCache: false
+[20:44:29.350] [DEBUG] [Notif Listener]: اعلان هدزآپ پاپ‌آپ اسپاتیفای ارسال شد: "Alicia"
+   -> جزئیات: Channel: lyricecho_spotify_channel | NotificationID: 2024
+[20:44:39.661] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.miui.misound: "null" - "Unknown Artist"
+   -> جزئیات: Package: com.miui.misound | Category: null | MediaSession: false | NotificationID: 887
+[20:44:49.467] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 87ms / 262947ms (Playing=true)
+[20:44:49.468] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.468] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 87ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.469] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=87ms | AutoDetectEnabled=true
+[20:44:49.469] [SUCCESS] [Floating Popup]: رویداد پخش آهنگ دریافت شد: "Carnival of Rust" - Poets of the Fall
+[06/11/2026 20:47] Neko: -> جزئیات: Position: 87ms | Auto-opening pop-up immediately...
+[20:44:49.480] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.482] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=87ms | AutoDetectEnabled=true
+[20:44:49.482] [SUCCESS] [Floating Popup]: رویداد پخش آهنگ دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Position: 87ms | Auto-opening pop-up immediately...
+[20:44:49.488] [SUCCESS] [Room SQLite]: بازیابی با تاخیر 0ms از حافظه محلی Room (Cache Hit): "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Language: Persian | Lines: 42 | Duration: 263000ms
+[20:44:49.495] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.496] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 87ms | Duration: 262947ms
+[20:44:49.503] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.506] [SUCCESS] [Room SQLite]: بازیابی با تاخیر 0ms از حافظه محلی Room (Cache Hit): "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Language: Persian | Lines: 42 | Duration: 263000ms
+[20:44:49.563] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 180ms / 262947ms (Playing=true)
+[20:44:49.570] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.570] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 180ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.572] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=180ms | AutoDetectEnabled=true
+[20:44:49.574] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 180ms
+[20:44:49.577] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.578] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=180ms | AutoDetectEnabled=true
+[20:44:49.578] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 180ms
+[20:44:49.582] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.583] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 180ms | Duration: 262947ms
+[20:44:49.587] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.588] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 208ms / 262947ms (Playing=true)
+[20:44:49.589] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.589] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 208ms)
+[06/11/2026 20:47] Neko: -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.589] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=208ms | AutoDetectEnabled=true
+[20:44:49.590] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 208ms
+[20:44:49.592] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.593] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=208ms | AutoDetectEnabled=true
+[20:44:49.593] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 208ms
+[20:44:49.596] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.596] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 208ms | Duration: 262947ms
+[20:44:49.600] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.604] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 224ms / 262947ms (Playing=true)
+[20:44:49.605] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.605] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 224ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.606] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=224ms | AutoDetectEnabled=true
+[20:44:49.606] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 224ms
+[20:44:49.609] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.610] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=224ms | AutoDetectEnabled=true
+[20:44:49.610] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 224ms
+[20:44:49.613] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.614] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 224ms | Duration: 262947ms
+[20:44:49.617] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.681] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 301ms / 262947ms (Playing=true)
+[20:44:49.681] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.682] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 301ms)
+[06/11/2026 20:47] Neko: -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.682] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=301ms | AutoDetectEnabled=true
+[20:44:49.684] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 301ms
+[20:44:49.687] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.688] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=301ms | AutoDetectEnabled=true
+[20:44:49.689] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 301ms
+[20:44:49.691] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.692] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 301ms | Duration: 262947ms
+[20:44:49.694] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.696] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 316ms / 262947ms (Playing=true)
+[20:44:49.696] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.697] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 316ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.697] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=316ms | AutoDetectEnabled=true
+[20:44:49.697] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 316ms
+[20:44:49.707] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.709] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=316ms | AutoDetectEnabled=true
+[20:44:49.710] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 316ms
+[20:44:49.716] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.717] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 316ms | Duration: 262947ms
+[20:44:49.722] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.811] [SUCCESS] [Floating Popup]: متن لیریک با موفقیت روی پاپ‌آپ شناور تزریق گردید
+   -> جزئیات: Song: "Carnival of Rust" | Lines: 42 | FromCache: true
+[20:44:49.818] [DEBUG] [Notif Listener]: اعلان هدزآپ پاپ‌آپ اسپاتیفای ارسال شد: "Carnival of Rust"
+   -> جزئیات: Channel: lyricecho_spotify_channel | NotificationID: 2024
+[20:44:49.820] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 550ms / 262947ms (Playing=true)
+[20:44:49.821] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+[06/11/2026 20:47] Neko: -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.821] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 550ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.822] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=550ms | AutoDetectEnabled=true
+[20:44:49.822] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 550ms
+[20:44:49.824] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.825] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=550ms | AutoDetectEnabled=true
+[20:44:49.826] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 550ms
+[20:44:49.828] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.829] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 550ms | Duration: 262947ms
+[20:44:49.831] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.871] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 601ms / 262947ms (Playing=true)
+[20:44:49.872] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.872] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 601ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.873] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=601ms | AutoDetectEnabled=true
+[20:44:49.873] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 601ms
+[20:44:49.876] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.876] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=601ms | AutoDetectEnabled=true
+[20:44:49.877] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 601ms
+[20:44:49.879] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.889] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 601ms | Duration: 262947ms
+[20:44:49.893] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.897] [SUCCESS] [Floating Popup]: متن لیریک با موفقیت روی پاپ‌آپ شناور تزریق گردید
+   -> جزئیات: Song: "Carnival of Rust" | Lines: 42 | FromCache: true
+[20:44:49.905] [DEBUG] [Notif Listener]: اعلان هدزآپ پاپ‌آپ اسپاتیفای ارسال شد: "Carnival of Rust"
+[06/11/2026 20:47] Neko: -> جزئیات: Channel: lyricecho_spotify_channel | NotificationID: 2024
+[20:44:49.927] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 656ms / 262947ms (Playing=true)
+[20:44:49.927] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.928] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 656ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.928] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=656ms | AutoDetectEnabled=true
+[20:44:49.929] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 656ms
+[20:44:49.931] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.932] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=656ms | AutoDetectEnabled=true
+[20:44:49.933] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 656ms
+[20:44:49.935] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.936] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 656ms | Duration: 262947ms
+[20:44:49.938] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.940] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 669ms / 262947ms (Playing=true)
+[20:44:49.940] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:49.941] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 669ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:49.941] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=669ms | AutoDetectEnabled=true
+[20:44:49.941] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 669ms
+[20:44:49.944] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.945] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=669ms | AutoDetectEnabled=true
+[20:44:49.945] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 669ms
+[20:44:49.948] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:49.949] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 669ms | Duration: 262947ms
+[20:44:49.951] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+[06/11/2026 20:47] Neko: -> جزئیات: Visible across all applications and home screen.
+[20:44:50.089] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 818ms / 262947ms (Playing=true)
+[20:44:50.090] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:50.090] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 818ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:50.090] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=818ms | AutoDetectEnabled=true
+[20:44:50.091] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 818ms
+[20:44:50.093] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.094] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=818ms | AutoDetectEnabled=true
+[20:44:50.096] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 818ms
+[20:44:50.099] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.100] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 818ms | Duration: 262947ms
+[20:44:50.103] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.117] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 840ms / 262947ms (Playing=true)
+[20:44:50.117] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:50.117] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 840ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:50.118] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=840ms | AutoDetectEnabled=true
+[20:44:50.118] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 840ms
+[20:44:50.121] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.122] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=840ms | AutoDetectEnabled=true
+[20:44:50.122] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 840ms
+[20:44:50.125] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.125] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 840ms | Duration: 262947ms
+[20:44:50.128] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+[06/11/2026 20:47] Neko: -> جزئیات: Visible across all applications and home screen.
+[20:44:50.195] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 924ms / 262947ms (Playing=true)
+[20:44:50.195] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:50.195] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 924ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:50.196] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=924ms | AutoDetectEnabled=true
+[20:44:50.196] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 924ms
+[20:44:50.199] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.200] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=924ms | AutoDetectEnabled=true
+[20:44:50.201] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 924ms
+[20:44:50.203] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.203] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 924ms | Duration: 262947ms
+[20:44:50.206] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.208] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 938ms / 262947ms (Playing=true)
+[20:44:50.209] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:44:50.209] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 938ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:44:50.209] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=938ms | AutoDetectEnabled=true
+[20:44:50.210] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 938ms
+[20:44:50.212] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.213] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=938ms | AutoDetectEnabled=true
+[20:44:50.214] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 938ms
+[20:44:50.217] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:44:50.218] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 938ms | Duration: 262947ms
+[20:44:50.220] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+[06/11/2026 20:47] Neko: -> جزئیات: Visible across all applications and home screen.
+[20:45:04.671] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 15240ms / 262947ms (Playing=true)
+[20:45:04.672] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:45:04.672] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 15240ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:45:04.673] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15240ms | AutoDetectEnabled=true
+[20:45:04.673] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15240ms
+[20:45:04.677] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.679] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15240ms | AutoDetectEnabled=true
+[20:45:04.679] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15240ms
+[20:45:04.682] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.683] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 15240ms | Duration: 262947ms
+[20:45:04.685] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.737] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 15306ms / 262947ms (Playing=true)
+[20:45:04.738] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:45:04.738] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 15306ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:45:04.739] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15306ms | AutoDetectEnabled=true
+[20:45:04.739] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15306ms
+[20:45:04.742] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.743] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15306ms | AutoDetectEnabled=true
+[20:45:04.743] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15306ms
+[20:45:04.746] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.746] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 15306ms | Duration: 262947ms
+[20:45:04.749] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+[06/11/2026 20:47] Neko: -> جزئیات: Visible across all applications and home screen.
+[20:45:04.820] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 15387ms / 262947ms (Playing=true)
+[20:45:04.821] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:45:04.821] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 15387ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:45:04.821] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15387ms | AutoDetectEnabled=true
+[20:45:04.822] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15387ms
+[20:45:04.839] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.840] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15387ms | AutoDetectEnabled=true
+[20:45:04.841] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15387ms
+[20:45:04.849] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.850] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 15387ms | Duration: 262947ms
+[20:45:04.852] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.897] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 15464ms / 262947ms (Playing=true)
+[20:45:04.897] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:45:04.898] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 15464ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:45:04.898] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15464ms | AutoDetectEnabled=true
+[20:45:04.898] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15464ms
+[20:45:04.901] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.902] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=15464ms | AutoDetectEnabled=true
+[20:45:04.902] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 15464ms
+[20:45:04.904] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:45:04.905] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 15464ms | Duration: 262947ms
+[20:45:04.909] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+[06/11/2026 20:47] Neko: -> جزئیات: Visible across all applications and home screen.
+[20:45:20.794] [INFO] [Floating Popup]: پنجره شناور سیستم با موفقیت حذف گردید
+[20:45:39.786] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.miui.misound: "null" - "Unknown Artist"
+   -> جزئیات: Package: com.miui.misound | Category: null | MediaSession: false | NotificationID: 887
+[20:45:53.506] [INFO] [Gemini AI]: سوئیچ به پروفایل API: test
+   -> جزئیات: Provider: custom_openai | URL: http://91.107.251.203:20128/v1 | Model: nara/step-5-preview
+[20:46:21.744] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 92063ms / 262947ms (Playing=true)
+[20:46:21.744] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:21.745] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 92063ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:21.745] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=92063ms | AutoDetectEnabled=true
+[20:46:21.745] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 92063ms
+[20:46:21.778] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:21.779] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=92063ms | AutoDetectEnabled=true
+[20:46:21.779] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 92063ms
+[20:46:21.797] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:21.797] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 92063ms | Duration: 262947ms
+[20:46:21.802] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:21.889] [SUCCESS] [Floating Popup]: پنجره شناور سراسری روی صفحه سوار شد (System Overlay Window Added to WindowManager)
+   -> جزئیات: Coordinates: (40, 160)
+[20:46:21.898] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 92215ms / 262947ms (Playing=true)
+[20:46:21.900] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:21.902] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 92215ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:21.905] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=92215ms | AutoDetectEnabled=true
+[20:46:21.906] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 92215ms
+[20:46:21.912] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:21.916] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+[06/11/2026 20:52] Neko: -> جزئیات: IsPlaying=true | Position=92215ms | AutoDetectEnabled=true
+[20:46:21.917] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 92215ms
+[20:46:21.924] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:21.926] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 92215ms | Duration: 262947ms
+[20:46:21.930] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:22.868] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 93179ms / 262947ms (Playing=true)
+[20:46:22.869] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:22.869] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 93179ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:22.872] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=93179ms | AutoDetectEnabled=true
+[20:46:22.873] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 93179ms
+[20:46:22.876] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:22.883] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=93179ms | AutoDetectEnabled=true
+[20:46:22.884] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 93179ms
+[20:46:22.889] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:22.890] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 93179ms | Duration: 262947ms
+[20:46:22.899] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:22.911] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 93225ms / 262947ms (Playing=true)
+[20:46:22.912] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:22.912] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 93225ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:22.913] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=93225ms | AutoDetectEnabled=true
+[20:46:22.916] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 93225ms
+[20:46:22.923] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:22.929] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+[06/11/2026 20:52] Neko: -> جزئیات: IsPlaying=true | Position=93225ms | AutoDetectEnabled=true
+[20:46:22.929] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 93225ms
+[20:46:22.932] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:22.933] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 93225ms | Duration: 262947ms
+[20:46:22.942] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.360] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 94041ms / 262947ms (Playing=true)
+[20:46:23.361] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:23.361] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 94041ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:23.362] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=94041ms | AutoDetectEnabled=true
+[20:46:23.362] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94041ms
+[20:46:23.365] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.366] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=94041ms | AutoDetectEnabled=true
+[20:46:23.366] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94041ms
+[20:46:23.368] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.370] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 94041ms | Duration: 262947ms
+[20:46:23.374] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.376] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 94056ms / 262947ms (Playing=true)
+[20:46:23.376] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:23.376] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 94056ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:23.377] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=94056ms | AutoDetectEnabled=true
+[20:46:23.377] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94056ms
+[20:46:23.380] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.380] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+[06/11/2026 20:52] Neko: -> جزئیات: IsPlaying=true | Position=94056ms | AutoDetectEnabled=true
+[20:46:23.381] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94056ms
+[20:46:23.383] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.384] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 94056ms | Duration: 262947ms
+[20:46:23.386] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.388] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 94068ms / 262947ms (Playing=true)
+[20:46:23.388] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:23.389] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 94068ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:23.389] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=94068ms | AutoDetectEnabled=true
+[20:46:23.389] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94068ms
+[20:46:23.392] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.393] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=94068ms | AutoDetectEnabled=true
+[20:46:23.393] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94068ms
+[20:46:23.395] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.396] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 94068ms | Duration: 262947ms
+[20:46:23.398] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.399] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 94080ms / 262947ms (Playing=true)
+[20:46:23.400] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:23.400] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 94080ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:23.400] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=94080ms | AutoDetectEnabled=true
+[20:46:23.401] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94080ms
+[20:46:23.404] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.405] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+[06/11/2026 20:52] Neko: -> جزئیات: IsPlaying=true | Position=94080ms | AutoDetectEnabled=true
+[20:46:23.405] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 94080ms
+[20:46:23.408] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:23.409] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 94080ms | Duration: 262947ms
+[20:46:23.411] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:31.618] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 101934ms / 262947ms (Playing=true)
+[20:46:31.619] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:31.619] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 101934ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:31.619] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=101934ms | AutoDetectEnabled=true
+[20:46:31.620] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 101934ms
+[20:46:31.624] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:31.628] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=101934ms | AutoDetectEnabled=true
+[20:46:31.628] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 101934ms
+[20:46:31.638] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:31.639] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 101934ms | Duration: 262947ms
+[20:46:31.642] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:31.649] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 101977ms / 262947ms (Playing=true)
+[20:46:31.649] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:31.649] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 101977ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:31.650] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=101977ms | AutoDetectEnabled=true
+[20:46:31.650] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 101977ms
+[20:46:31.654] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:31.655] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+[06/11/2026 20:52] Neko: -> جزئیات: IsPlaying=true | Position=101977ms | AutoDetectEnabled=true
+[20:46:31.656] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 101977ms
+[20:46:31.659] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:31.660] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 101977ms | Duration: 262947ms
+[20:46:31.664] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:32.034] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 102363ms / 262947ms (Playing=true)
+[20:46:32.035] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:32.035] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 102363ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:32.036] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=102363ms | AutoDetectEnabled=true
+[20:46:32.036] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 102363ms
+[20:46:32.038] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:32.039] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=102363ms | AutoDetectEnabled=true
+[20:46:32.039] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 102363ms
+[20:46:32.045] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:32.050] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 102363ms | Duration: 262947ms
+[20:46:32.053] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:32.064] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 102391ms / 262947ms (Playing=true)
+[20:46:32.064] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:32.064] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 102391ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:32.065] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=102391ms | AutoDetectEnabled=true
+[20:46:32.065] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 102391ms
+[20:46:32.067] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:32.068] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+[06/11/2026 20:52] Neko: -> جزئیات: IsPlaying=true | Position=102391ms | AutoDetectEnabled=true
+[20:46:32.073] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 102391ms
+[20:46:32.076] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:32.077] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 102391ms | Duration: 262947ms
+[20:46:32.079] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:39.784] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.miui.misound: "null" - "Unknown Artist"
+   -> جزئیات: Package: com.miui.misound | Category: null | MediaSession: false | NotificationID: 887
+[20:46:52.128] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 122809ms / 262947ms (Playing=true)
+[20:46:52.129] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:52.129] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 122809ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:52.134] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122809ms | AutoDetectEnabled=true
+[20:46:52.135] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 122809ms
+[20:46:52.141] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.142] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122809ms | AutoDetectEnabled=true
+[20:46:52.143] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 122809ms
+[20:46:52.154] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.154] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 122809ms | Duration: 262947ms
+[20:46:52.166] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.172] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 122854ms / 262947ms (Playing=true)
+[20:46:52.174] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:52.175] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 122854ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:52.176] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122854ms | AutoDetectEnabled=true
+[20:46:52.176] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 122854ms
+[06/11/2026 20:52] Neko: [20:46:52.181] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.182] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122854ms | AutoDetectEnabled=true
+[20:46:52.183] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 122854ms
+[20:46:52.186] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.187] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 122854ms | Duration: 262947ms
+[20:46:52.192] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.203] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 122886ms / 262947ms (Playing=true)
+[20:46:52.204] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:52.205] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 122886ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:52.206] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122886ms | AutoDetectEnabled=true
+[20:46:52.206] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 122886ms
+[20:46:52.220] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.222] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122886ms | AutoDetectEnabled=true
+[20:46:52.223] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 122886ms
+[20:46:52.228] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.232] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 122886ms | Duration: 262947ms
+[20:46:52.245] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.253] [DEBUG] [Notif Listener]: موقعیت زنده دقیق از MediaSession اسپاتیفای خوانده شد: 122935ms / 262947ms (Playing=true)
+[20:46:52.253] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.spotify.music: "Carnival of Rust" - "Poets of the Fall"
+   -> جزئیات: Package: com.spotify.music | Category: transport | MediaSession: true | NotificationID: 2131430176
+[20:46:52.254] [SUCCESS] [Notif Listener]: موزیک فعال با موفقیت از اعلان استخراج شد: "Carnival of Rust" اثر Poets of the Fall (موقعیت: 122935ms)
+   -> جزئیات: Triggering LyricEcho auto-sync pipeline for com.spotify.music...
+[20:46:52.254] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122935ms | AutoDetectEnabled=true
+[20:46:52.255] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+[06/11/2026 20:52] Neko: -> جزئیات: Position: 122935ms
+[20:46:52.261] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.264] [INFO] [Spotify Bcast]: دریافت رویداد ترک در ViewModel: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: IsPlaying=true | Position=122935ms | AutoDetectEnabled=true
+[20:46:52.265] [INFO] [Floating Popup]: آهنگ "Carnival of Rust" از قبل باز است. همگام‌سازی موقعیت و نمایش مجدد پاپ‌آپ
+   -> جزئیات: Position: 122935ms
+[20:46:52.271] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:46:52.272] [SUCCESS] [Spotify Bcast]: رویداد آهنگ جدید دریافت شد: "Carnival of Rust" - Poets of the Fall
+   -> جزئیات: Playing: true | Position: 122935ms | Duration: 262947ms
+[20:46:52.278] [SUCCESS] [Floating Popup]: سرویس پاپ‌آپ شناور سیستم (System Overlay Window) فراخوانی شد
+   -> جزئیات: Visible across all applications and home screen.
+[20:47:39.873] [DEBUG] [Notif Listener]: اعلان مدیا دریافت شد از com.miui.misound: "null" - "Unknown Artist"
+   -> جزئیات: Package: com.miui.misound | Category: null | MediaSession: false | NotificationID: 887

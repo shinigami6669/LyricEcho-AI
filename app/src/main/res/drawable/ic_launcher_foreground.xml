@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Centered within 66dp safe zone (approx coordinates 26-82) -->
+    <!-- Sound lyric bars / speech bubble shape -->
+    <path
+        android:fillColor="#06B6D4"
+        android:pathData="M34,46a4,4 0,0 1,4 -4h32a4,4 0,0 1,4 4v18a4,4 0,0 1,-4 4h-18l-8,8v-8h-6a4,4 0,0 1,-4 -4z" />
+    <!-- Music note overlay in bright violet -->
+    <path
+        android:fillColor="#8B5CF6"
+        android:pathData="M60,33v23.2a7.5,7.5 0,1 1,-5 -2.2v-15l15,-4v8z" />
+    <!-- Waveform lyric lines -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M42,50h14v3h-14zM42,56h10v3h-10z" />
+</vector>

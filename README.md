@@ -3,12 +3,19 @@
 </p>
 
 <p align="center">
+  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/latest"><img src="https://img.shields.io/github/v/release/shinigami6669/LyricEcho-AI?style=for-the-badge&color=EC4899&label=Universal%20APK" alt="Download APK"></a>
   <a href="https://github.com/shinigami6669/LyricEcho-AI/stargazers"><img src="https://img.shields.io/github/stars/shinigami6669/LyricEcho-AI?style=for-the-badge&color=8B5CF6" alt="Stars"></a>
   <a href="https://github.com/shinigami6669/LyricEcho-AI/network/members"><img src="https://img.shields.io/github/forks/shinigami6669/LyricEcho-AI?style=for-the-badge&color=06B6D4" alt="Forks"></a>
   <a href="https://github.com/shinigami6669/LyricEcho-AI/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-emerald?style=for-the-badge" alt="License"></a>
   <a href="https://developer.android.com"><img src="https://img.shields.io/badge/Platform-Android%207.0%2B%20(API%2024%2B)-3DDC84?style=for-the-badge&logo=android&logoColor=white" alt="Android"></a>
   <a href="https://kotlinlang.org"><img src="https://img.shields.io/badge/Kotlin-2.0%2B-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin"></a>
   <a href="https://developer.android.com/jetpack/compose"><img src="https://img.shields.io/badge/Jetpack%20Compose-Material%203-4285F4?style=for-the-badge&logo=jetpackcompose&logoColor=white" alt="Compose"></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/latest">
+    <img src="https://img.shields.io/badge/Direct%20Download-Universal%20APK%20(v1.0.0)-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="42">
+  </a>
 </p>
 
 ---

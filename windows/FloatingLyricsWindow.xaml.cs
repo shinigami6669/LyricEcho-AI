@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Automation;
 using System.Windows.Input;
@@ -8,9 +9,16 @@ namespace LyricEcho.Windows;
 
 public partial class FloatingLyricsWindow : Window
 {
+    private string interfaceLanguage = "fa";
+    private List<(DependencyObject Element, DependencyProperty Property, string Original)> interfaceTexts = new();
+    private LyricLine? currentLine;
+    private string currentTitle = "";
+    private string currentArtist = "";
+    private bool isPlaying;
     public FloatingLyricsWindow()
     {
         InitializeComponent();
+        interfaceTexts = InterfaceText.Capture(this);
         SetLyrics(null, "", "");
         SetOffset(0);
         SetPlayback(false, false, false, false);
@@ -22,12 +30,25 @@ public partial class FloatingLyricsWindow : Window
         Resources["Accent"] = accent;
     }
 
+    public void SetInterfaceLanguage(string language)
+    {
+        interfaceLanguage = language;
+        InterfaceText.Apply(interfaceTexts, language);
+        SetLyrics(currentLine, currentTitle, currentArtist);
+        string label = InterfaceText.Translate(isPlaying ? "مکث" : "پخش", interfaceLanguage);
+        PlayPause.ToolTip = label;
+        AutomationProperties.SetName(PlayPause, label);
+    }
+
     public void SetLyrics(LyricLine? line, string title, string artist)
     {
+        currentLine = line;
+        currentTitle = title;
+        currentArtist = artist;
         TrackTitle.Text = string.IsNullOrWhiteSpace(title) ? "LyricEcho"
             : string.IsNullOrWhiteSpace(artist) ? title : $"{title} — {artist}";
         TrackTitle.ToolTip = TrackTitle.Text;
-        OriginalLine.Text = line?.Original ?? "در انتظار متن آهنگ";
+        OriginalLine.Text = line?.Original ?? InterfaceText.Translate("در انتظار متن آهنگ", interfaceLanguage);
         OriginalLine.FontSize = line == null ? 17 : 22;
         OriginalLine.FlowDirection = TextDirection(OriginalLine.Text);
         TranslationLine.Text = line?.Translation ?? "";
@@ -50,8 +71,9 @@ public partial class FloatingLyricsWindow : Window
 
     public void SetPlayback(bool playing, bool canToggle, bool canSkipPrevious, bool canSkipNext)
     {
+        isPlaying = playing;
         PlayPause.Content = playing ? "Ⅱ" : "▶";
-        string label = playing ? "مکث" : "پخش";
+        string label = InterfaceText.Translate(playing ? "مکث" : "پخش", interfaceLanguage);
         PlayPause.ToolTip = label;
         AutomationProperties.SetName(PlayPause, label);
         PlayPause.IsEnabled = canToggle;
@@ -74,7 +96,7 @@ public partial class FloatingLyricsWindow : Window
         bool compact = Controls.Visibility == Visibility.Visible;
         Controls.Visibility = compact ? Visibility.Collapsed : Visibility.Visible;
         CompactButton.Content = compact ? "+" : "−";
-        string label = compact ? "نمایش کنترل‌ها" : "حالت جمع‌وجور";
+        string label = InterfaceText.Translate(compact ? "نمایش کنترل‌ها" : "حالت جمع‌وجور", interfaceLanguage);
         CompactButton.ToolTip = label;
         AutomationProperties.SetName(CompactButton, label);
     }

@@ -21,7 +21,7 @@ namespace LyricEcho.Windows;
 public record LyricLine(double? Seconds, string Original, string Translation = "");
 public record SavedSong(string Title, string Artist, string Language, List<LyricLine> Lines, bool Favorite = false);
 public record ApiProfile(string Name, string Endpoint, string Model, string EncryptedKey);
-public record AppSettings(string Language, string Endpoint, string Model, int Theme = 0, double FontSize = 18, double Opacity = 1, bool Scroll = true, bool Overlay = false, bool Translate = true, bool Tracking = true, bool TranslationPreferenceSet = false, bool OverlayPreferenceSet = false);
+public record AppSettings(string Language, string Endpoint, string Model, int Theme = 0, double FontSize = 18, double Opacity = 1, bool Scroll = true, bool Overlay = false, bool Translate = true, bool Tracking = true, bool TranslationPreferenceSet = false, bool OverlayPreferenceSet = false, string UiLanguage = "fa");
 
 public partial class MainWindow : Window
 {
@@ -48,16 +48,61 @@ public partial class MainWindow : Window
     private string loadedLanguage = "";
     private int translationVersion;
     private readonly List<SavedSong> library = new();
+    private List<(DependencyObject Element, DependencyProperty Property, string Original)> interfaceTexts = new();
 
     public MainWindow()
     {
         InitializeComponent();
+        interfaceTexts = InterfaceText.Capture(this);
+        InterfaceLanguage.SelectedValue = "fa";
         SetModels(new[] { "gemini-flash-lite-latest", "gemini-2.5-flash", "gemini-2.5-pro" }, "gemini-flash-lite-latest");
-        Loaded += async (_, _) => { LoadSettings(); LoadKey(); InitializeTray(); settingsReady = true; RefreshProfiles(); RefreshLibrary(); System.ComponentModel.DependencyPropertyDescriptor.FromProperty(TextBlock.TextProperty, typeof(TextBlock)).AddValueChanged(Status, (_, _) => Log(Status.Text)); await ConnectMedia(); timer.Start(); };
+        Loaded += async (_, _) => { LoadSettings(); LoadKey(); InitializeTray(); settingsReady = true; RefreshProfiles(); RefreshLibrary(); System.ComponentModel.DependencyPropertyDescriptor.FromProperty(TextBlock.TextProperty, typeof(TextBlock)).AddValueChanged(Status, (_, _) => LocalizeStatus()); await ConnectMedia(); timer.Start(); };
         Closing += (_, e) => { if (!exiting && trayIcon != null) { e.Cancel = true; Hide(); } };
         Closed += (_, _) => { timer.Stop(); overlay?.Close(); if (trayIcon != null) { trayIcon.Visible = false; trayIcon.Icon?.Dispose(); trayIcon.ContextMenuStrip?.Dispose(); trayIcon.Dispose(); } http.Dispose(); };
         Application.Current.SessionEnding += (_, _) => exiting = true;
         timer.Tick += async (_, _) => await PollMedia();
+    }
+
+    private string CurrentUiLanguage => InterfaceLanguage?.SelectedValue as string ?? "fa";
+
+    private void InterfaceLanguage_SelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        if (InterfaceLanguage == null) return;
+        ApplyInterfaceLanguage();
+        if (!settingsReady || loadingSettings) return;
+        try { SaveSettings(); }
+        catch (Exception ex) { Status.Text = "ذخیره تنظیمات ناموفق بود: " + ex.Message; }
+    }
+
+    private void ApplyInterfaceLanguage()
+    {
+        string language = CurrentUiLanguage;
+        InterfaceText.Apply(interfaceTexts, language);
+        FlowDirection = language is "fa" or "ar" ? FlowDirection.RightToLeft : FlowDirection.LeftToRight;
+        if (LibraryPreviewTitle != null)
+            LibraryPreviewTitle.Text = LibraryList?.SelectedItem is SavedSong selected
+                ? selected.Title : InterfaceText.Translate("یک آهنگ انتخاب کنید", language);
+        if (LibraryList != null && LibraryCount != null) FilterLibrary();
+        if (trayIcon?.ContextMenuStrip is { } menu && menu.Items.Count >= 2)
+        {
+            menu.Items[0].Text = InterfaceText.Translate("باز کردن LyricEcho", language);
+            menu.Items[1].Text = InterfaceText.Translate("خروج کامل", language);
+        }
+        overlay?.SetInterfaceLanguage(language);
+    }
+
+    private bool translatingStatus;
+    private void LocalizeStatus()
+    {
+        if (translatingStatus) return;
+        var localized = InterfaceText.Translate(Status.Text, CurrentUiLanguage);
+        if (localized != Status.Text)
+        {
+            translatingStatus = true;
+            Status.Text = localized;
+            translatingStatus = false;
+        }
+        Log(Status.Text);
     }
 
     private string SelectedLanguage => LanguageInput.SelectedValue as string ?? "Persian";
@@ -81,8 +126,8 @@ public partial class MainWindow : Window
     private void InitializeTray()
     {
         var menu = new System.Windows.Forms.ContextMenuStrip();
-        menu.Items.Add("باز کردن LyricEcho", null, (_, _) => RestoreWindow());
-        menu.Items.Add("خروج کامل", null, (_, _) => { exiting = true; Close(); });
+        menu.Items.Add(InterfaceText.Translate("باز کردن LyricEcho", CurrentUiLanguage), null, (_, _) => RestoreWindow());
+        menu.Items.Add(InterfaceText.Translate("خروج کامل", CurrentUiLanguage), null, (_, _) => { exiting = true; Close(); });
         var resource = Application.GetResourceStream(new Uri("pack://application:,,,/LyricEcho.Windows;component/Assets/LyricEcho.ico"));
         using var iconStream = resource.Stream;
         using var loadedIcon = new System.Drawing.Icon(iconStream);
@@ -106,7 +151,7 @@ public partial class MainWindow : Window
         Directory.CreateDirectory(dataDir);
         var settings = new AppSettings(SelectedLanguage, EndpointInput.Text.Trim(), SelectedModel,
             ThemeChoice.SelectedIndex, FontSizeSlider.Value, OverlayOpacity.Value, AutoScroll.IsChecked == true,
-            AutoOverlay.IsChecked == true, AutoTranslate.IsChecked == true, TrackingEnabled.IsChecked == true, true, true);
+            AutoOverlay.IsChecked == true, AutoTranslate.IsChecked == true, TrackingEnabled.IsChecked == true, true, true, InterfaceLanguage.SelectedValue as string ?? "fa");
         File.WriteAllText(Path.Combine(dataDir, "settings.json"), JsonSerializer.Serialize(settings));
     }
 
@@ -331,7 +376,7 @@ public partial class MainWindow : Window
         try
         {
             Status.Text = "در حال ترجمه...";
-            if (!Uri.TryCreate(endpoint, UriKind.Absolute, out var endpointUri) || (endpointUri.Scheme != "https" && !(endpointUri.Scheme == "http" && endpointUri.IsLoopback))) throw new InvalidDataException("نشانی API باید HTTPS یا آدرس محلی باشد.");
+            if (!Uri.TryCreate(endpoint, UriKind.Absolute, out var endpointUri) || (endpointUri.Scheme != "https" && !(endpointUri.Scheme == "http" && endpointUri.IsLoopback))) throw new InvalidDataException(InterfaceText.Translate("نشانی API باید HTTPS یا آدرس محلی باشد.", CurrentUiLanguage));
             bool gemini = endpointUri.Host.Equals("generativelanguage.googleapis.com", StringComparison.OrdinalIgnoreCase);
             var instruction = "Translate each item into " + language + ". Return only a JSON array of strings, with exactly the same number and order of items. Do not add commentary.\n" + JsonSerializer.Serialize(input.Select(x => x.Original));
             using var req = gemini
@@ -343,16 +388,16 @@ public partial class MainWindow : Window
                 else req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", ApiKey.Password);
             }
             using var res = await http.SendAsync(req);
-            if (!res.IsSuccessStatusCode) throw new HttpRequestException($"خطای سرویس ({(int)res.StatusCode}). آدرس، مدل و کلید را بررسی کنید.");
+            if (!res.IsSuccessStatusCode) throw new HttpRequestException(string.Format(InterfaceText.Translate("خطای سرویس ({0}). آدرس، مدل و کلید را بررسی کنید.", CurrentUiLanguage), (int)res.StatusCode));
             using var doc = JsonDocument.Parse(await res.Content.ReadAsStringAsync());
             string content = gemini
                 ? doc.RootElement.GetProperty("candidates")[0].GetProperty("content").GetProperty("parts")[0].GetProperty("text").GetString() ?? ""
                 : doc.RootElement.GetProperty("choices")[0].GetProperty("message").GetProperty("content").GetString() ?? "";
             content = Regex.Replace(content, @"<think>[\s\S]*?</think>", "", RegexOptions.IgnoreCase).Trim();
             int start = content.IndexOf('['), end = content.LastIndexOf(']');
-            if (start < 0 || end < start) throw new InvalidDataException("پاسخ مدل آرایه ترجمه ندارد.");
+            if (start < 0 || end < start) throw new InvalidDataException(InterfaceText.Translate("پاسخ مدل آرایه ترجمه ندارد.", CurrentUiLanguage));
             var translations = JsonSerializer.Deserialize<List<string>>(content[start..(end + 1)]) ?? new();
-            if (translations.Count != input.Count) throw new InvalidDataException("تعداد خطوط ترجمه با متن اصلی برابر نیست.");
+            if (translations.Count != input.Count) throw new InvalidDataException(InterfaceText.Translate("تعداد خطوط ترجمه با متن اصلی برابر نیست.", CurrentUiLanguage));
             if (version != requestVersion || currentTranslation != translationVersion ||
                 !string.Equals(loadedTrackKey, TitleInput.Text.Trim() + "\n" + ArtistInput.Text.Trim(), StringComparison.OrdinalIgnoreCase) ||
                 !string.Equals(loadedLanguage, SelectedLanguage, StringComparison.OrdinalIgnoreCase)) return;
@@ -394,7 +439,7 @@ public partial class MainWindow : Window
             if (!File.Exists(path)) { ThemeChoice.SelectedIndex = 0; ProviderChoice.SelectedIndex = 0; return; }
             var saved = JsonSerializer.Deserialize<AppSettings>(File.ReadAllText(path));
             if (saved == null) return;
-            loadingSettings = true; SelectLanguage(saved.Language); EndpointInput.Text = saved.Endpoint; SelectModel(saved.Model); ThemeChoice.SelectedIndex = Math.Clamp(saved.Theme, 0, 4); FontSizeSlider.Value = Math.Clamp(saved.FontSize, 13, 28); OverlayOpacity.Value = Math.Clamp(saved.Opacity, 0.35, 1); AutoScroll.IsChecked = saved.Scroll; AutoOverlay.IsChecked = saved.OverlayPreferenceSet ? saved.Overlay : true; AutoTranslate.IsChecked = saved.TranslationPreferenceSet ? saved.Translate : true; TrackingEnabled.IsChecked = saved.Tracking; loadingSettings = false; ApplyTheme(); ApplyFont();
+            loadingSettings = true; InterfaceLanguage.SelectedValue = saved.UiLanguage ?? "fa"; ApplyInterfaceLanguage(); SelectLanguage(saved.Language); EndpointInput.Text = saved.Endpoint; SelectModel(saved.Model); ThemeChoice.SelectedIndex = Math.Clamp(saved.Theme, 0, 4); FontSizeSlider.Value = Math.Clamp(saved.FontSize, 13, 28); OverlayOpacity.Value = Math.Clamp(saved.Opacity, 0.35, 1); AutoScroll.IsChecked = saved.Scroll; AutoOverlay.IsChecked = saved.OverlayPreferenceSet ? saved.Overlay : true; AutoTranslate.IsChecked = saved.TranslationPreferenceSet ? saved.Translate : true; TrackingEnabled.IsChecked = saved.Tracking; loadingSettings = false; ApplyTheme(); ApplyFont();
         }
         catch (Exception) { Status.Text = "خواندن تنظیمات ممکن نشد؛ مقادیر پیش‌فرض استفاده می‌شوند."; }
     }
@@ -414,21 +459,30 @@ public partial class MainWindow : Window
     {
         if (LibraryList == null || LibrarySearch == null || LibraryCount == null) return;
         string query = LibrarySearch.Text.Trim();
+        var selectedSong = LibraryList.SelectedItem as SavedSong;
         var filtered = library.Where(x => (FavoritesOnly?.IsChecked != true || x.Favorite) && (x.Title.Contains(query, StringComparison.CurrentCultureIgnoreCase) || x.Artist.Contains(query, StringComparison.CurrentCultureIgnoreCase))).OrderBy(x => x.Title).ToList();
         LibraryList.ItemsSource = filtered;
-        LibraryCount.Text = $"{filtered.Count} آهنگ";
+        if (selectedSong != null)
+            LibraryList.SelectedItem = filtered.FirstOrDefault(song => song.Title == selectedSong.Title && song.Artist == selectedSong.Artist && song.Language == selectedSong.Language);
+        LibraryCount.Text = CurrentUiLanguage switch { "en" => $"{filtered.Count} songs", "ar" => $"{filtered.Count} أغنية", "es" => $"{filtered.Count} canciones", "tr" => $"{filtered.Count} şarkı", _ => $"{filtered.Count} آهنگ" };
     }
     private void LibrarySearch_TextChanged(object sender, TextChangedEventArgs e) => FilterLibrary();
     private void LibraryRefresh_Click(object sender, RoutedEventArgs e) => RefreshLibrary();
-    private void LibraryOpen_Click(object sender, RoutedEventArgs e)
+    private void LibraryList_SelectionChanged(object sender, SelectionChangedEventArgs e)
     {
-        if (LibraryList.SelectedItem is not SavedSong song) return;
-        requestVersion++; TitleInput.Text = song.Title; ArtistInput.Text = song.Artist; loadingSettings = true; SelectLanguage(song.Language); loadingSettings = false;
-        loadedTrackKey = song.Title + "\n" + song.Artist;
-        loadedLanguage = song.Language;
-        SetLines(song.Lines); Status.Text = "آهنگ از کتابخانه باز شد.";
-        FrameworkElement tab = LyricsList; while (tab.Parent is FrameworkElement parent && parent is not TabItem) tab = parent;
-        if (tab.Parent is TabItem item) item.IsSelected = true;
+        if (LibraryPreviewLines == null || LibraryPreviewTitle == null || LibraryPreviewArtist == null) return;
+        if (LibraryList.SelectedItem is SavedSong song)
+        {
+            LibraryPreviewTitle.Text = song.Title;
+            LibraryPreviewArtist.Text = song.Artist;
+            LibraryPreviewLines.ItemsSource = song.Lines;
+        }
+        else
+        {
+            LibraryPreviewTitle.Text = InterfaceText.Translate("یک آهنگ انتخاب کنید", InterfaceLanguage?.SelectedValue as string ?? "fa");
+            LibraryPreviewArtist.Text = "";
+            LibraryPreviewLines.ItemsSource = null;
+        }
     }
     private async Task MediaAction(Func<GlobalSystemMediaTransportControlsSession, Task<bool>> action)
     {
@@ -488,7 +542,7 @@ public partial class MainWindow : Window
     private void DeleteProfile_Click(object sender, RoutedEventArgs e)
     {
         if (ProfileChoice.SelectedItem is not string name) return;
-        if (MessageBox.Show($"پروفایل «{name}» حذف شود؟", "حذف پروفایل", MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes) return;
+        if (MessageBox.Show(string.Format(InterfaceText.Translate("پروفایل «{0}» حذف شود؟", CurrentUiLanguage), name), InterfaceText.Translate("حذف پروفایل", CurrentUiLanguage), MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes) return;
         try { var profiles = ReadProfiles(); profiles.RemoveAll(x => x.Name == name); File.WriteAllText(ProfilesPath, JsonSerializer.Serialize(profiles)); RefreshProfiles(); Status.Text = "پروفایل حذف شد."; }
         catch (Exception ex) { Status.Text = "حذف پروفایل ناموفق بود: " + ex.Message; }
     }
@@ -566,7 +620,7 @@ public partial class MainWindow : Window
     private void DeleteLibrary_Click(object sender, RoutedEventArgs e)
     {
         if (LibraryList.SelectedItem is not SavedSong song) return;
-        if (MessageBox.Show($"آهنگ «{song.Title}» از کتابخانه حذف شود؟", "حذف آهنگ", MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes) return;
+        if (MessageBox.Show(string.Format(InterfaceText.Translate("آهنگ «{0}» از کتابخانه حذف شود؟", CurrentUiLanguage), song.Title), InterfaceText.Translate("حذف آهنگ", CurrentUiLanguage), MessageBoxButton.YesNo, MessageBoxImage.Question) != MessageBoxResult.Yes) return;
         try { File.Delete(CachePath(song.Title, song.Artist, song.Language)); RefreshLibrary(); Status.Text = "آهنگ حذف شد."; }
         catch (Exception ex) { Status.Text = "حذف ناموفق بود: " + ex.Message; }
     }
@@ -574,20 +628,20 @@ public partial class MainWindow : Window
     {
         var text = new TextBox { AcceptsReturn = true, TextWrapping = TextWrapping.Wrap, VerticalScrollBarVisibility = ScrollBarVisibility.Auto, FlowDirection = FlowDirection.LeftToRight, Margin = new Thickness(5) };
         var translation = new TextBox { AcceptsReturn = true, TextWrapping = TextWrapping.Wrap, VerticalScrollBarVisibility = ScrollBarVisibility.Auto, FlowDirection = FlowDirection.RightToLeft, Margin = new Thickness(5) };
-        var save = new Button { Content = "نمایش و ذخیره", Margin = new Thickness(10) };
+        var save = new Button { Content = InterfaceText.Translate("نمایش و ذخیره", CurrentUiLanguage), Margin = new Thickness(10) };
         var columns = new Grid { Margin = new Thickness(10) }; columns.ColumnDefinitions.Add(new ColumnDefinition()); columns.ColumnDefinitions.Add(new ColumnDefinition());
-        var originalPanel = new DockPanel(); var originalLabel = new TextBlock { Text = "متن اصلی یا LRC", Margin = new Thickness(5) }; DockPanel.SetDock(originalLabel, Dock.Top); originalPanel.Children.Add(originalLabel); originalPanel.Children.Add(text);
-        var translationPanel = new DockPanel(); var translationLabel = new TextBlock { Text = "ترجمه (اختیاری، هر خط جدا)", Margin = new Thickness(5) }; DockPanel.SetDock(translationLabel, Dock.Top); translationPanel.Children.Add(translationLabel); translationPanel.Children.Add(translation);
+        var originalPanel = new DockPanel(); var originalLabel = new TextBlock { Text = InterfaceText.Translate("متن اصلی یا LRC", CurrentUiLanguage), Margin = new Thickness(5) }; DockPanel.SetDock(originalLabel, Dock.Top); originalPanel.Children.Add(originalLabel); originalPanel.Children.Add(text);
+        var translationPanel = new DockPanel(); var translationLabel = new TextBlock { Text = InterfaceText.Translate("ترجمه (اختیاری، هر خط جدا)", CurrentUiLanguage), Margin = new Thickness(5) }; DockPanel.SetDock(translationLabel, Dock.Top); translationPanel.Children.Add(translationLabel); translationPanel.Children.Add(translation);
         Grid.SetColumn(translationPanel, 1); columns.Children.Add(originalPanel); columns.Children.Add(translationPanel);
         var layout = new DockPanel(); DockPanel.SetDock(save, Dock.Bottom); layout.Children.Add(save); layout.Children.Add(columns);
-        var dialog = new Window { Title = "ورود متن یا LRC", Width = 800, Height = 520, Owner = this, Content = layout, WindowStartupLocation = WindowStartupLocation.CenterOwner };
+        var dialog = new Window { Title = InterfaceText.Translate("ورود متن یا LRC", CurrentUiLanguage), Width = 800, Height = 520, Owner = this, Content = layout, WindowStartupLocation = WindowStartupLocation.CenterOwner };
         save.Click += async (_, _) => {
             var parsed = ParseLyrics(text.Text); if (parsed.Count == 0) { Status.Text = "متنی وارد نشده است."; return; }
             var translated = translation.Text.Replace("\r", "").Split('\n');
-            if (!string.IsNullOrWhiteSpace(translation.Text) && translated.Length != parsed.Count) { MessageBox.Show(dialog, "تعداد خطوط ترجمه باید با متن اصلی یکسان باشد."); return; }
+            if (!string.IsNullOrWhiteSpace(translation.Text) && translated.Length != parsed.Count) { MessageBox.Show(dialog, InterfaceText.Translate("تعداد خطوط ترجمه باید با متن اصلی یکسان باشد.", CurrentUiLanguage)); return; }
             var final = parsed.Select((x, i) => x with { Translation = string.IsNullOrWhiteSpace(translation.Text) ? "" : translated[i] }).ToList();
             requestVersion++; loadedTrackKey = TitleInput.Text.Trim() + "\n" + ArtistInput.Text.Trim(); loadedLanguage = SelectedLanguage; SetLines(final);
-            try { if (!string.IsNullOrWhiteSpace(TitleInput.Text)) { await SaveCache(TitleInput.Text.Trim(), ArtistInput.Text.Trim(), SelectedLanguage, final); RefreshLibrary(); } Status.Text = $"{lines.Count} خط بارگذاری شد."; dialog.Close(); }
+            try { if (!string.IsNullOrWhiteSpace(TitleInput.Text)) { await SaveCache(TitleInput.Text.Trim(), ArtistInput.Text.Trim(), SelectedLanguage, final); RefreshLibrary(); } Status.Text = string.Format(InterfaceText.Translate("{0} خط بارگذاری شد.", CurrentUiLanguage), lines.Count); dialog.Close(); }
             catch (Exception ex) { Status.Text = "ذخیره متن ناموفق بود: " + ex.Message; }
         }; dialog.ShowDialog();
     }
@@ -602,11 +656,11 @@ public partial class MainWindow : Window
             if (!string.IsNullOrWhiteSpace(ApiKey.Password)) { if (gemini) req.Headers.Add("x-goog-api-key", ApiKey.Password); else req.Headers.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", ApiKey.Password); }
             Status.Text = "در حال بررسی اتصال...";
             var watch = System.Diagnostics.Stopwatch.StartNew(); using var response = await http.SendAsync(req); watch.Stop();
-            if (!response.IsSuccessStatusCode) { Status.Text = $"خطای اتصال: HTTP {(int)response.StatusCode}. کلید و نشانی را بررسی کنید."; return; }
+            if (!response.IsSuccessStatusCode) { Status.Text = string.Format(InterfaceText.Translate("خطای اتصال: HTTP {0}. کلید و نشانی را بررسی کنید.", CurrentUiLanguage), (int)response.StatusCode); return; }
             using var json = JsonDocument.Parse(await response.Content.ReadAsStringAsync());
             var property = gemini ? "models" : "data"; var field = gemini ? "name" : "id";
             var models = json.RootElement.TryGetProperty(property, out var list) && list.ValueKind == JsonValueKind.Array ? list.EnumerateArray().Select(x => GetString(x, field)).Where(x => x != null).Take(100).ToArray() : Array.Empty<string?>();
-            Status.Text = $"اتصال موفق؛ {watch.ElapsedMilliseconds} میلی‌ثانیه، {models.Length} مدل.";
+            Status.Text = string.Format(InterfaceText.Translate("اتصال موفق؛ {0} میلی‌ثانیه، {1} مدل.", CurrentUiLanguage), watch.ElapsedMilliseconds, models.Length);
             Log("Models: " + string.Join(", ", models));
             if (EndpointInput.Text.Trim().TrimEnd('/') == baseUrl && models.Length > 0)
             {
@@ -666,6 +720,7 @@ public partial class MainWindow : Window
         floating.Closed += (_, _) => overlay = null;
         overlay = floating;
         floating.ApplyPalette((Brush)Resources["Panel"], (Brush)Resources["Accent"]);
+        floating.SetInterfaceLanguage(CurrentUiLanguage);
         floating.SetOffset(offset);
         UpdateOverlayPlayback(overlayPlayback);
         UpdateOverlay();

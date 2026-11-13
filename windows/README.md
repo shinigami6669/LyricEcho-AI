@@ -20,6 +20,8 @@ dotnet run --project .\LyricEcho.Windows.csproj
 - Display original lyrics and translations in a floating window
 - Translate using Gemini or an OpenAI-compatible service
 - Import LRC files, browse locally saved lyrics, and manage favorites
+- Browse saved lyrics and translations without interrupting the currently playing track
+- Choose a Persian, English, Arabic, Spanish, or Turkish app interface
 - Configure appearance, playback integration, and translation profiles
 
 Configure your own API key in the app. Keys and profiles are stored locally using Windows account protection and are not included in this project. API requests may incur charges depending on the chosen provider.

@@ -6,7 +6,7 @@
 <p align="center">Synchronized lyrics and line-by-line translations for Android and Windows.</p>
 <p align="center">
   <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho-AI-v1.0.1-universal.apk"><img src="https://img.shields.io/badge/Android-Download%20APK-45D6A3?style=for-the-badge&amp;logo=android&amp;logoColor=white" alt="Download Android APK"></a>
-  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho.Windows.exe"><img src="https://img.shields.io/badge/Windows-Download%20EXE-8B5CF6?style=for-the-badge&amp;logo=windows&amp;logoColor=white" alt="Download Windows EXE"></a>
+  <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.2-windows/LyricEcho.Windows.exe"><img src="https://img.shields.io/badge/Windows-Download%20EXE-8B5CF6?style=for-the-badge&amp;logo=windows&amp;logoColor=white" alt="Download Windows EXE"></a>
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-242B3B?style=for-the-badge" alt="MIT License"></a>
 </p>
 
@@ -35,7 +35,7 @@ A desktop companion with a movable lyrics window, local library, media-session c
 
 **Requires:** 64-bit Windows 10 version 19041 or later, or Windows 11. The single-file release includes the .NET runtime.
 
-[Download the Windows EXE](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho.Windows.exe)
+[Download the Windows EXE](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.2-windows/LyricEcho.Windows.exe)
 
 </td></tr>
 </table>
@@ -45,7 +45,8 @@ A desktop companion with a movable lyrics window, local library, media-session c
 - **Lyrics in sync** — follow timed lyrics and adjust the timing when needed.
 - **Translations** — choose a language and connect Gemini or a compatible AI provider using your own credentials.
 - **Floating lyrics** — keep the current line visible while using another app.
-- **Your library** — return to locally saved songs and translations.
+- **Your library** — browse saved songs and translations alongside the current track.
+- **App language** — use the interface in Persian, English, Arabic, Spanish, or Turkish.
 - **Flexible playback** — detect supported players and use the available media controls.
 
 Features and player support can differ between Android and Windows. Translation requires an available provider and may incur usage charges. Lyrics and timing depend on the available source.
@@ -72,7 +73,7 @@ For Android, optionally configure a Gemini key locally using `.env.example` as a
 
 **LyricEcho** متن آهنگ و ترجمه خط‌به‌خط آن را در اندروید و ویندوز نمایش می‌دهد. پنجره شناور، کتابخانه محلی و تنظیم زمان به شما کمک می‌کنند هنگام گوش دادن، متن را دنبال کنید. زبان و سرویس ترجمه را در تنظیمات انتخاب کنید و کلید API خودتان را وارد کنید.
 
-[دانلود اندروید](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho-AI-v1.0.1-universal.apk) · [دانلود ویندوز](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho.Windows.exe)
+[دانلود اندروید](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.1/LyricEcho-AI-v1.0.1-universal.apk) · [دانلود ویندوز](https://github.com/shinigami6669/LyricEcho-AI/releases/download/v1.0.2-windows/LyricEcho.Windows.exe)
 
 ## License
 

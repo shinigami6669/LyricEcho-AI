@@ -29,12 +29,6 @@ class SettingsDataStore(private val context: Context) {
 
         private fun sanitizeLegacyTestValue(value: String?): String {
             if (value.isNullOrBlank()) return ""
-            if (value.contains("sk-0cc3af0a3e2940ea") ||
-                value.contains("AQ.Ab8RN6J2kM4HfzQe") ||
-                value.contains("91.107.251.203")
-            ) {
-                return ""
-            }
             return value
         }
     }
@@ -336,7 +330,7 @@ class SettingsDataStore(private val context: Context) {
                 for (i in 0 until array.length()) {
                     val obj = array.getJSONObject(i)
                     val p = ApiProfile.fromJson(obj)
-                    if (p.id != "preset_opencode" && !p.baseUrl.contains("91.107.251.203")) {
+                    if (p.id != "preset_opencode") {
                         list.add(p.copy(apiKey = sanitizeLegacyTestValue(p.apiKey)))
                     }
                 }

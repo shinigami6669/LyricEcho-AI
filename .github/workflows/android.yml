@@ -24,10 +24,11 @@ jobs:
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
 
-    - name: Prepare Dummy .env for CI
+    - name: Prepare Dummy .env and Keystore for CI
       run: |
         touch .env
         echo "GEMINI_API_KEY=dummy_ci_token" >> .env
+        keytool -genkey -v -keystore debug.keystore -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
 
     - name: Build Debug APK
       run: ./gradlew assembleDebug --stacktrace

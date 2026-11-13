@@ -24,7 +24,7 @@ class SettingsDataStore(private val context: Context) {
     companion object {
         const val DEFAULT_BASE_URL = "https://generativelanguage.googleapis.com"
         const val DEFAULT_API_KEY = ""
-        const val DEFAULT_MODEL = "gemini-2.5-flash"
+        const val DEFAULT_MODEL = "gemini-flash-lite-latest"
         const val DEFAULT_BACKUP_GEMINI_KEY = ""
 
         private fun sanitizeLegacyTestValue(value: String?): String {
@@ -126,6 +126,7 @@ class SettingsDataStore(private val context: Context) {
             rawModels.split(",").map { it.trim() }.filter { it.isNotBlank() }
         } else {
             listOf(
+                "gemini-flash-lite-latest",
                 "gemini-2.5-flash",
                 "gemini-2.5-pro",
                 "gpt-4o-mini",
@@ -413,24 +414,24 @@ class SettingsDataStore(private val context: Context) {
         }
     }
 
-    private val KEY_RELEASE_CLEAN_V1 = booleanPreferencesKey("release_clean_v1_done")
+    private val KEY_RELEASE_CLEAN_V2 = booleanPreferencesKey("release_clean_v2_done")
 
     suspend fun purgeLegacyTestCredentialsIfNeeded(): Boolean {
         var didClean = false
         context.dataStore.edit { prefs ->
-            if (prefs[KEY_RELEASE_CLEAN_V1] != true) {
+            if (prefs[KEY_RELEASE_CLEAN_V2] != true) {
                 prefs[KEY_CUSTOM_API_KEY] = ""
                 prefs[KEY_BACKUP_KEY] = ""
                 prefs[KEY_PROVIDER_TYPE] = ApiProviderType.GOOGLE_GEMINI.id
                 prefs[KEY_BASE_URL] = ApiProviderType.GOOGLE_GEMINI.defaultBaseUrl
-                prefs[KEY_SELECTED_MODEL] = ApiProviderType.GOOGLE_GEMINI.defaultModel
+                prefs[KEY_SELECTED_MODEL] = "gemini-flash-lite-latest"
                 prefs.remove(KEY_DISCOVERED_MODELS)
                 prefs.remove(KEY_SAVED_API_PROFILES)
                 prefs[KEY_ACTIVE_PROFILE_ID] = "preset_gemini_official"
                 prefs[KEY_TOTAL_REQUESTS] = 0
                 prefs[KEY_SUCCESS_REQUESTS] = 0
                 prefs[KEY_FAILED_REQUESTS] = 0
-                prefs[KEY_RELEASE_CLEAN_V1] = true
+                prefs[KEY_RELEASE_CLEAN_V2] = true
                 didClean = true
             }
         }

@@ -462,6 +462,68 @@ fun HomeScreen(
             }
         }
 
+        // Quick Setup Guide Banner when API Key is not yet configured
+        AnimatedVisibility(visible = apiEngineSettings.apiKey.isBlank()) {
+            Surface(
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(horizontal = 16.dp, vertical = 4.dp)
+                    .clip(RoundedCornerShape(12.dp))
+                    .border(1.dp, ElectricCyan.copy(alpha = 0.5f), RoundedCornerShape(12.dp))
+                    .clickable { onNavigateToSettings() }
+                    .testTag("home_api_key_guide_banner"),
+                color = Color(0xFF0B1526)
+            ) {
+                Row(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(horizontal = 12.dp, vertical = 8.dp),
+                    horizontalArrangement = Arrangement.SpaceBetween,
+                    verticalAlignment = Alignment.CenterVertically
+                ) {
+                    Column(modifier = Modifier.weight(1f)) {
+                        Text(
+                            text = "🔑 دریافت کلید رایگان هوش مصنوعی (API Key)",
+                            color = ElectricCyan,
+                            fontSize = 11.sp,
+                            fontWeight = FontWeight.Bold,
+                            style = androidx.compose.ui.text.TextStyle(
+                                textDirection = androidx.compose.ui.text.style.TextDirection.Rtl
+                            ),
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                        Text(
+                            text = "برای فعال‌سازی ترجمه خودکار، کلید رایگان خود را از aistudio.google.com/api-keys دریافت و در تنظیمات وارد کنید.",
+                            color = TextSecondary,
+                            fontSize = 10.sp,
+                            style = androidx.compose.ui.text.TextStyle(
+                                textDirection = androidx.compose.ui.text.style.TextDirection.Rtl
+                            ),
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                    }
+                    Spacer(modifier = Modifier.width(8.dp))
+                    Button(
+                        onClick = {
+                            try {
+                                val intent = android.content.Intent(
+                                    android.content.Intent.ACTION_VIEW,
+                                    android.net.Uri.parse("https://aistudio.google.com/api-keys")
+                                )
+                                context.startActivity(intent)
+                            } catch (_: Exception) {
+                                onNavigateToSettings()
+                            }
+                        },
+                        colors = ButtonDefaults.buttonColors(containerColor = ElectricCyan),
+                        shape = RoundedCornerShape(8.dp)
+                    ) {
+                        Text("دریافت کلید", color = Color.Black, fontSize = 10.sp, fontWeight = FontWeight.Bold)
+                    }
+                }
+            }
+        }
+
         // Spotify & Overlay Permission Warning Banner
         if (!hasNotifListener || !hasOverlay) {
             Surface(

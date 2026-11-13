@@ -498,21 +498,170 @@ fun ApiHubCard(
 
             Spacer(modifier = Modifier.height(12.dp))
 
-            // 3. API Key Input
-            Text(
-                text = "کلید احراز هویت (API Key)",
-                color = TextSecondary,
-                fontSize = 11.sp,
-                fontWeight = FontWeight.Medium
-            )
-            Spacer(modifier = Modifier.height(4.dp))
+            // 3. API Key Input + Interactive Step-by-Step Guide (https://aistudio.google.com/api-keys)
+            var showApiKeyGuide by remember { mutableStateOf(keyInput.isBlank()) }
+
+            Row(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalArrangement = Arrangement.SpaceBetween,
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = "کلید احراز هویت (API Key)",
+                    color = TextSecondary,
+                    fontSize = 11.sp,
+                    fontWeight = FontWeight.Medium
+                )
+                Row(
+                    verticalAlignment = Alignment.CenterVertically,
+                    modifier = Modifier
+                        .clip(RoundedCornerShape(8.dp))
+                        .background(ElectricCyan.copy(alpha = 0.15f))
+                        .border(1.dp, ElectricCyan.copy(alpha = 0.5f), RoundedCornerShape(8.dp))
+                        .clickable { showApiKeyGuide = !showApiKeyGuide }
+                        .padding(horizontal = 8.dp, vertical = 4.dp)
+                        .testTag("btn_toggle_api_key_guide")
+                ) {
+                    Icon(
+                        imageVector = Icons.Default.Key,
+                        contentDescription = null,
+                        tint = ElectricCyan,
+                        modifier = Modifier.size(13.dp)
+                    )
+                    Spacer(modifier = Modifier.width(4.dp))
+                    Text(
+                        text = if (showApiKeyGuide) "بستن راهنمای دریافت API" else "راهنمای دریافت کلید رایگان API",
+                        color = ElectricCyan,
+                        fontSize = 10.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                }
+            }
+
+            AnimatedVisibility(visible = showApiKeyGuide) {
+                Surface(
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .padding(top = 8.dp, bottom = 6.dp)
+                        .clip(RoundedCornerShape(14.dp))
+                        .border(1.dp, ElectricCyan.copy(alpha = 0.45f), RoundedCornerShape(14.dp)),
+                    color = Color(0xFF0B1526)
+                ) {
+                    Column(
+                        modifier = Modifier.padding(12.dp),
+                        verticalArrangement = Arrangement.spacedBy(6.dp)
+                    ) {
+                        Text(
+                            text = "🔑 راهنمای گام‌به‌گام دریافت کلید رایگان Google Gemini API:",
+                            color = ElectricCyan,
+                            fontSize = 12.sp,
+                            fontWeight = FontWeight.Bold,
+                            style = androidx.compose.ui.text.TextStyle(
+                                textDirection = androidx.compose.ui.text.style.TextDirection.Rtl
+                            ),
+                            modifier = Modifier.fillMaxWidth()
+                        )
+                        Text(
+                            text = "۱. روی دکمه زیر بزنید تا صفحه رسمی Google AI Studio باز شود.\n" +
+                                    "۲. با اکانت جیمیل (Google) خود وارد شوید.\n" +
+                                    "۳. روی دکمه آبی «Create API key» بزنید.\n" +
+                                    "۴. کلید ساخته‌شده (شروع با AIza...) را کپی کرده و در کادر زیر جای‌گذاری (Paste) کنید.",
+                            color = TextPrimary,
+                            fontSize = 11.sp,
+                            lineHeight = 17.sp,
+                            style = androidx.compose.ui.text.TextStyle(
+                                textDirection = androidx.compose.ui.text.style.TextDirection.Rtl
+                            ),
+                            modifier = Modifier.fillMaxWidth()
+                        )
+
+                        // Selectable / Copyable URL box
+                        Surface(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .clip(RoundedCornerShape(8.dp))
+                                .border(1.dp, ObsidianBorder, RoundedCornerShape(8.dp)),
+                            color = Color(0xFF070B14)
+                        ) {
+                            Row(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(horizontal = 10.dp, vertical = 6.dp),
+                                horizontalArrangement = Arrangement.SpaceBetween,
+                                verticalAlignment = Alignment.CenterVertically
+                            ) {
+                                Text(
+                                    text = "https://aistudio.google.com/api-keys",
+                                    color = ElectricCyan,
+                                    fontSize = 11.sp,
+                                    fontFamily = FontFamily.Monospace,
+                                    fontWeight = FontWeight.SemiBold,
+                                    modifier = Modifier.weight(1f)
+                                )
+                                IconButton(
+                                    onClick = {
+                                        val cm = context.getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+                                        cm.setPrimaryClip(ClipData.newPlainText("Google AI Studio API Keys", "https://aistudio.google.com/api-keys"))
+                                        Toast.makeText(context, "لینک دریافت API کپی شد", Toast.LENGTH_SHORT).show()
+                                    },
+                                    modifier = Modifier.size(26.dp)
+                                ) {
+                                    Icon(
+                                        imageVector = Icons.Default.ContentCopy,
+                                        contentDescription = "Copy URL",
+                                        tint = TextSecondary,
+                                        modifier = Modifier.size(14.dp)
+                                    )
+                                }
+                            }
+                        }
+
+                        // Direct Open Link Button
+                        Button(
+                            onClick = {
+                                try {
+                                    val intent = android.content.Intent(
+                                        android.content.Intent.ACTION_VIEW,
+                                        android.net.Uri.parse("https://aistudio.google.com/api-keys")
+                                    )
+                                    context.startActivity(intent)
+                                } catch (e: Exception) {
+                                    Toast.makeText(context, "امکان باز کردن مرورگر وجود ندارد. لینک را کپی کنید.", Toast.LENGTH_SHORT).show()
+                                }
+                            },
+                            colors = ButtonDefaults.buttonColors(containerColor = ElectricCyan),
+                            shape = RoundedCornerShape(10.dp),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(38.dp)
+                                .testTag("btn_open_aistudio_api_keys")
+                        ) {
+                            Icon(
+                                imageVector = Icons.Default.Key,
+                                contentDescription = null,
+                                tint = Color.Black,
+                                modifier = Modifier.size(16.dp)
+                            )
+                            Spacer(modifier = Modifier.width(6.dp))
+                            Text(
+                                text = "دریافت کلید رایگان از Google AI Studio",
+                                color = Color.Black,
+                                fontSize = 11.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                }
+            }
+
+            Spacer(modifier = Modifier.height(6.dp))
             OutlinedTextField(
                 value = keyInput,
                 onValueChange = {
                     keyInput = it
                     onApiKeyChange(it)
                 },
-                placeholder = { Text("sk-...", color = TextMuted, fontSize = 12.sp) },
+                placeholder = { Text("AIzaSy... یا sk-...", color = TextMuted, fontSize = 12.sp) },
                 visualTransformation = if (isKeyVisible) VisualTransformation.None else PasswordVisualTransformation(),
                 trailingIcon = {
                     IconButton(onClick = { isKeyVisible = !isKeyVisible }) {
@@ -701,7 +850,7 @@ fun ApiHubCard(
                             onModelChange(it)
                         },
                         label = { Text("شناسه مدل فعال (Active Model ID)", fontSize = 11.sp) },
-                        placeholder = { Text("gemini-2.5-flash", fontSize = 12.sp) },
+                        placeholder = { Text("gemini-flash-lite-latest", fontSize = 12.sp) },
                         singleLine = true,
                         colors = OutlinedTextFieldDefaults.colors(
                             focusedTextColor = TextPrimary,

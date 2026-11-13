@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/shinigami6669/LyricEcho-AI/releases/latest">
-    <img src="https://img.shields.io/badge/Direct%20Download-Universal%20APK%20(v1.0.0)-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="42">
+    <img src="https://img.shields.io/badge/Direct%20Download-Universal%20APK%20(v1.0.1)-8B5CF6?style=for-the-badge&logo=android&logoColor=white" alt="Download APK" height="42">
   </a>
 </p>
 

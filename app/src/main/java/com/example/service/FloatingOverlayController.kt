@@ -37,7 +37,7 @@ object FloatingOverlayController {
     private val _isCollapsed = MutableStateFlow(false)
     val isCollapsed: StateFlow<Boolean> = _isCollapsed.asStateFlow()
 
-    private val _activeModelName = MutableStateFlow("gemini-2.5-flash")
+    private val _activeModelName = MutableStateFlow("gemini-flash-lite-latest")
     val activeModelName: StateFlow<String> = _activeModelName.asStateFlow()
 
     private val _isMasterEnabled = MutableStateFlow(true)

@@ -277,7 +277,7 @@ class GeminiLyricsService(
                 prompt = prompt,
                 baseUrl = "https://generativelanguage.googleapis.com",
                 apiKey = backupKey,
-                model = "gemini-2.5-flash",
+                model = "gemini-flash-lite-latest",
                 temperature = 0.3f
             )
             if (fallbackResult.isSuccess) {
@@ -419,7 +419,7 @@ class GeminiLyricsService(
     ): Result<GeminiLyricsResult> {
         val startTime = System.currentTimeMillis()
         val cleanBase = baseUrl.trim().removeSuffix("/")
-        val actualModel = if (model.startsWith("gemini")) model else "gemini-2.5-flash"
+        val actualModel = if (model.startsWith("gemini")) model else "gemini-flash-lite-latest"
         val url = if (cleanBase.contains("generativelanguage.googleapis.com")) {
             "https://generativelanguage.googleapis.com/v1beta/models/$actualModel:generateContent?key=${apiKey.trim()}"
         } else {
@@ -670,7 +670,7 @@ class GeminiLyricsService(
                     prompt = prompt,
                     baseUrl = "https://generativelanguage.googleapis.com",
                     apiKey = backupKey,
-                    model = "gemini-2.5-flash",
+                    model = "gemini-flash-lite-latest",
                     temperature = 0.2f
                 )
                 if (fbRes.isSuccess) {
@@ -806,7 +806,7 @@ class GeminiLyricsService(
     ): Result<List<String>> {
         val startTime = System.currentTimeMillis()
         val cleanBase = baseUrl.trim().removeSuffix("/")
-        val actualModel = if (model.startsWith("gemini")) model else "gemini-2.5-flash"
+        val actualModel = if (model.startsWith("gemini")) model else "gemini-flash-lite-latest"
         val url = if (cleanBase.contains("generativelanguage.googleapis.com")) {
             "https://generativelanguage.googleapis.com/v1beta/models/$actualModel:generateContent?key=${apiKey.trim()}"
         } else {

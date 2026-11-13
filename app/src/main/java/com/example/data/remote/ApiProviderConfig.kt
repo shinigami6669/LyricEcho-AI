@@ -11,7 +11,7 @@ enum class ApiProviderType(
         id = "google_gemini",
         displayName = "Google Gemini (Official)",
         defaultBaseUrl = "https://generativelanguage.googleapis.com",
-        defaultModel = "gemini-2.5-flash",
+        defaultModel = "gemini-flash-lite-latest",
         isGeminiNative = true
     ),
     OPENAI_OFFICIAL(
@@ -70,6 +70,7 @@ data class ApiEngineSettings(
     val apiKey: String = "",
     val selectedModel: String = ApiProviderType.GOOGLE_GEMINI.defaultModel,
     val discoveredModels: List<String> = listOf(
+        "gemini-flash-lite-latest",
         "gemini-2.5-flash",
         "gemini-2.5-pro",
         "gpt-4o-mini",
@@ -140,7 +141,7 @@ data class ApiProfile(
                 providerTypeId = ApiProviderType.GOOGLE_GEMINI.id,
                 baseUrl = "https://generativelanguage.googleapis.com",
                 apiKey = "",
-                selectedModel = "gemini-2.5-flash",
+                selectedModel = "gemini-flash-lite-latest",
                 timeoutSeconds = 30,
                 isSystemPreset = true
             ),
